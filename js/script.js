@@ -43,8 +43,8 @@ function changeTitle(){
 }
 
 function drawDiagram(className,end,color){
-	drawCircle(className,55,heightSkills/2,50,end,Math.PI*1.5,true,color);
-	drawCircle(className,55,heightSkills/2,37,0,Math.PI*2,false,"#222222");
+	drawCircle(className,30,30,30,end,Math.PI*1.5,true,color);
+	drawCircle(className,30,30,20,0,Math.PI*2,false,"#222222");
 }
 
 function delay(className,style,delay){
@@ -154,21 +154,27 @@ $(document).ready(function(){
 			$("#up").css({"transform": "translateX(150px)"});
 		}
 		
-		if((winScroll >= $(".skills").offset().top - winHeight + winHeight/2) && (diagramSkills["designCount"] == 0)){			
+		if((winScroll >= $(".skill-1").offset().top - winHeight + winHeight/4) && (diagramSkills["designCount"] == 0)){			
 			delay(".skill-1",{"transform":"translateX(0)"},0);
-			delay(".skill-2",{"transform":"translateX(0)"},300);
-			delay(".skill-3",{"transform":"translateX(0)"},600);
-
-			heightSkills = $(".skills").height();
-			$(".percent").css({"top":heightSkills/2-$(".percent").height()/2});
-			$(".skill-text").css({"top":heightSkills/2-$(".percent").height()/2});
 
 			changeDiagram("design", diagramSkills, "designCount", "designEnd", 31, "green");
-			changeDiagram("develop", diagramSkills, "developCount", "developEnd", 32, "red");
-			changeDiagram("seo", diagramSkills, "seoCount", "seoEnd", 30, "orange");
 			
 			changeNumber(".skill-1 .percent", percentSkills, "designCount", "designEnd", 30, "%");
+		}
+
+		if((winScroll >= $(".skill-2").offset().top - winHeight + winHeight/4) && (diagramSkills["developCount"] == 0)){			
+			delay(".skill-2",{"transform":"translateX(0)"},300);
+
+			changeDiagram("develop", diagramSkills, "developCount", "developEnd", 32, "red");
+			
 			changeNumber(".skill-2 .percent", percentSkills, "developCount", "developEnd", 30, "%");
+		}
+
+		if((winScroll >= $(".skill-3").offset().top - winHeight + winHeight/4) && (diagramSkills["seoCount"] == 0)){			
+			delay(".skill-3",{"transform":"translateX(0)"},600);
+
+			changeDiagram("seo", diagramSkills, "seoCount", "seoEnd", 30, "orange");
+			
 			changeNumber(".skill-3 .percent", percentSkills, "seoCount", "seoEnd", 30, "%");
 		}
 

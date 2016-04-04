@@ -38,7 +38,6 @@
 			<li><a href="#about">О нас</a></li>
 			<li><a href="#service">Услуги</a></li>
 			<li><a href="#portfolio">Наши работы</a></li>
-			<li><a href="#blog">Блог</a></li>
 			<li><a href="#review">Отзывы клиентов</a></li>
 			<li><a href="#contacts">Контакты</a></li>
 			<li><a href="#order">Оформить заказ</a></li>
@@ -187,10 +186,24 @@
 		<article class="video">
 			<iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/CdsHZh4XZMo" frameborder="0" allowfullscreen></iframe>
 			<div class="promo">
-				<div class="promo-title">Заголовок</div>
-				<div class="promo-text">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum laudantium asperiores nam sapiente error laboriosam enim dolorum molestiae, a voluptas, similique veniam, reiciendis fugit ea? Eos, sequi? Voluptate obcaecati porro recusandae perferendis, quia optio dolore.
-				</div>
+				<div class="promo-title">Уровень нашей специализации</div>
+				<article class="skills">
+					<div class="skill skill-1">
+						<span class="percent">0</span>
+						<span class="skill-text">Дизайн</span>
+						<canvas id="design"></canvas>
+					</div>
+					<div class="skill skill-2">
+						<span class="percent">0</span>
+						<span class="skill-text">Разработка</span>
+						<canvas id="develop"></canvas>
+					</div>
+					<div class="skill skill-3">
+						<span class="percent">0</span>
+						<span class="skill-text">Продвижение</span>
+						<canvas id="seo"></canvas>				
+					</div>
+				</article>
 			</div>
 		</article>
 		<article id="portfolio">
@@ -218,55 +231,6 @@
 				<td class="certificates-count">0</td>
 			</tr>
 		</table>
-		<article id="blog">
-			<h2>Читайте наш блог</h2>
-			<p>
-				Здесь наши разработчики, дизайнеры, SEO-оптимизаторы, менеджеры и многие другие, деляться своими мыслями и советами касаемые самых различных облостей.
-			</p>
-		</article>
-		<article class="blogs">
-			<div class="blog blog-1">
-				<h3>Советы по SEO продвижению</h3>
-				<img src="img/1.jpg">
-				<p>
-					Расскажем как лучше всего продвигать ваш сайт
-				</p>
-				<a href="#">Читать</a>
-			</div>
-			<div class="blog blog-2">
-				<h3>Как мы создаем красивые сайты</h3>
-				<img src="img/2.jpg">
-				<p>
-					Описание обыденной работы над сайтом
-				</p>
-				<a href="#">Читать</a>		
-			</div>
-			<div class="blog blog-3">
-				<h3>О компании Just&nbsp;Space</h3>
-				<img src="img/1.jpg">
-				<p>
-					Поделимся основными рабочими моментами
-				</p>
-				<a href="#">Читать</a>
-			</div>
-		</article>
-		<article class="skills">
-			<div class="skill skill-1">
-				<span class="percent">0</span>
-				<span class="skill-text">Дизайн</span>
-				<canvas id="design"></canvas>
-			</div>
-			<div class="skill skill-2">
-				<span class="percent">0</span>
-				<span class="skill-text">Разработка</span>
-				<canvas id="develop"></canvas>
-			</div>
-			<div class="skill skill-3">
-				<span class="percent">0</span>
-				<span class="skill-text">Продвижение</span>
-				<canvas id="seo"></canvas>				
-			</div>
-		</article>
 		<article id="review">
 			<h2>Отзывы наших клиентов</h2>
 		</article>

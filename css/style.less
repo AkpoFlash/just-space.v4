@@ -313,44 +313,6 @@ footer{
 	}
 }
 
-.blogs{
-	width: 100%;
-	display: flex;
-	justify-content: center;
-	margin: 0 auto 100px;
-	.blog{
-		text-align: center;
-		width: 25%;
-		height: 100%;
-		position: relative;
-		margin: 0 10px;
-		background: @white;
-		vertical-align: bottom;
-		p{
-			height: 100px;
-		}
-		img{
-			width: 80%;
-		}
-		h3{
-			color: @red;
-		}
-		a{
-			width: 50%;
-			display: inline-block;
-			color: @black;
-			text-decoration: none;
-			border: 1px solid @black;
-			padding: 10px 15px;
-			transition: all 0.3s ease-in-out;
-			&:hover{
-				background: @black;
-				color: @red;
-			}
-		}
-	}
-}
-
 .reviews{
 	width: 100%;
 	height: 350px;
@@ -557,32 +519,13 @@ footer{
 	}
 }
 
-.skills{
-	background-color: @black-light;
-	padding: 10px 15px;
-	display: flex;
-	justify-content: space-around;
-	color: @white;
-	.skill{
-		position: relative;
-		transition: all .3s ease-in-out;
-		transform: translateX(-500%);
-		.percent{
-			position: absolute;
-			left: 10%;
-		}
-		.skill-text{
-			position: absolute;
-			left: 40%;
-		}
-	}
-}
-
 .video{
 	background-color: @black-light;
 	position: relative;
 	display: flex;
 	padding: 50px;
+	height: 315px;
+	overflow: hidden;
 	#video{
 		border-radius: 2px;
 	}
@@ -593,10 +536,42 @@ footer{
 		color: @white;
 		.promo-title{
 			font-weight: 700;
-			line-height: 60px;
 		}
-		.promo-text{
-
+		.skills{
+			background-color: @black-light;
+			color: @white;
+			.skill{
+				position: relative;
+				height: 60px;
+				transition: all .7s ease-in-out;
+				transform: translateX(500%);
+				.percent{
+					font-size: 18px;
+					position: absolute;
+					left: 14px;
+					top: 20px;
+				}
+				.skill-text{
+					position: absolute;
+					left: 80px;
+					top: 15px;
+				}
+			}
+			.skill-1{
+				position: absolute;
+				bottom: 230px;
+				right: 50px;
+			}
+			.skill-2{
+				position: absolute;
+				bottom: 135px;
+				right: 50px;
+			}
+			.skill-3{
+				position: absolute;
+				bottom: 50px;
+				right: 50px;
+			}
 		}
 	}
 }
