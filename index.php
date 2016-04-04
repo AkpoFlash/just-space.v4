@@ -3,10 +3,33 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Мы создаем сайты | Just Space</title>
+	<!--
+		!Preload styles!
+	-->
+	<style>
+		#preload{
+			position: fixed;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			z-index: 99;
+			background-color: #fafafa;
+		}
+		.spinner{
+			position: absolute;
+			top: 45%;
+			left: 45%;
+			background-color: #fafafa;
+		}
+	</style>
 	<link rel="stylesheet" href="css/style.min.css">
 	<link rel="stylesheet" href="css/font-awesome-4.5.0/css/font-awesome.css">
 </head>
 <body>
+	<div id="preload">
+		<img src="img/preloader.gif" class="spinner" alt="Идет загрузка сайта">
+	</div>
 	<header>
 		<div class="logo">
 			<i class="fa fa-cube"></i> Just Space
@@ -17,7 +40,7 @@
 			<li><a href="#portfolio">Наши работы</a></li>
 			<li><a href="#blog">Блог</a></li>
 			<li><a href="#review">Отзывы клиентов</a></li>
-			<li><a href="#">Контакты</a></li>
+			<li><a href="#contacts">Контакты</a></li>
 			<li><a href="#order">Оформить заказ</a></li>
 		</nav>
 		<div class="text text-1">

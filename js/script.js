@@ -94,6 +94,11 @@ function drawCircle(id,x,y,r,start,end,flag,color){
 }
 
 $(document).ready(function(){
+	$(window).on("load",function(){
+		$(".spinner").fadeOut(750);
+		$("#preload").fadeOut(1500);
+	});	
+
 	$("header").css({"height" : winHeight});
 		
 	$(".review-2").css({"transform":"translateX(0)"});
