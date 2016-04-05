@@ -460,7 +460,7 @@ footer .contacts span {
   width: 25%;
 }
 .order {
-  widows: 100%;
+  width: 100%;
 }
 .order input {
   background-color: #ffffff;
@@ -543,17 +543,17 @@ footer .contacts span {
 .video .promo .skills .skill-1 {
   position: absolute;
   bottom: 230px;
-  right: 50px;
+  right: 10%;
 }
 .video .promo .skills .skill-2 {
   position: absolute;
   bottom: 135px;
-  right: 50px;
+  right: 10%;
 }
 .video .promo .skills .skill-3 {
   position: absolute;
   bottom: 50px;
-  right: 50px;
+  right: 10%;
 }
 .abouts {
   padding: 0 20px;

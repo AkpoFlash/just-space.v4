@@ -30,7 +30,7 @@
         }
 	</style>
     <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/font-awesome-4.5.0/css/font-awesome.css">
 </head>
 <body>
@@ -129,23 +129,23 @@
 				<td><i class="fa fa-eye"></i></td>
 			</tr>
 			<tr>
-				<td>Адаптивная верстка</td>
+				<td>Адаптивный дизайн</td>
 				<td>Кросбраузерность</td>
 				<td>Современные технологии</td>
 				<td>Документация</td>
 			</tr>
 			<tr>
 				<td>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi est sapiente quas laborum pariatur molestias illo, alias maxime soluta corrupti!
+                    Обеспечиваем удобное отображение сайтов на всех устройствах: компьютерах, планшетах и телефонах.
 				</td>
 				<td>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi est sapiente quas laborum pariatur molestias illo, alias maxime soluta corrupti!
+                    Мы можем снабдить сайты поддержкой даже устаревших браузеров - Internet Explorer версии 8 и ниже.
 				</td>
 				<td>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi est sapiente quas laborum pariatur molestias illo, alias maxime soluta corrupti!
+                    Стараясь использовать только лучшие решения, мы внедряем новые технологии в наши проекты.
 				</td>
 				<td>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi est sapiente quas laborum pariatur molestias illo, alias maxime soluta corrupti!
+                    Наша команда стремиться документировать код и соблюдать принятые стандарты, что позволяет работать лучше.
 				</td>
 			</tr>
 		</table>
@@ -274,7 +274,7 @@
 			</div>
 			<div class="review review-2">
 				<p>
-                    Наша фирма работает на рынке с 1997 года и долгое время мы имели только основной корпоративный сайт, но в какой то момент было принято решение создать тематические лендинги для повышения продаж. Просмотрев действующие предложения выбрали студию Just Space, в первую очередь из-за привлекательной цены, быстрых сроков и рекомендаций знакомых. Первый макет был готов уже на следующий день, еще сутки работал копирайтер, в итоге через три дня сайт был полностью готов. После этого также договорились о создание контекстной рекламы и поисковом продвижение, данный услуги
+                    Наша фирма работает на рынке с 1997 года и долгое время мы имели только основной корпоративный сайт, но в какой то момент было принято решение создать тематические лендинги для повышения продаж. Просмотрев действующие предложения выбрали студию Just Space, в первую очередь из-за привлекательной цены, быстрых сроков и рекомендаций знакомых. Первый макет был готов уже на следующий день, еще сутки работал копирайтер, в итоге через три дня сайт был полностью готов. После этого также договорились о создание контекстной рекламы и поисковом продвижение. В данный момент компания Just Space предоставляет нам техническую поддержку полностью удоволетворяющую наши нужды.
 				</p>
 				<span class="signature">
 					Андрей компания &laquo;Тульский центр недвижимости&raquo;
@@ -332,6 +332,6 @@
 	</footer>
 	<a id="up" href="#">^</a>
 	<script src="js/jquery.js"></script>
-	<script src="js/script.min.js"></script>
+	<script src="js/script.js"></script>
 </body>
 </html>

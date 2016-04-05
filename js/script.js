@@ -153,28 +153,28 @@ $(document).ready(function(){
 			$("#up").css({"transform": "translateX(150px)"});
 		}
 		
-		if((winScroll >= $(".skill-1").offset().top - winHeight + winHeight/4) && (diagramSkills["designCount"] == 0)){			
+		if((winScroll >= $(".skill-1").offset().top - winHeight + winHeight/4) && (diagramSkills["designCount"] == 0)){
 			delay(".skill-1",{"transform":"translateX(0)"},0);
 
-			changeDiagram("design", diagramSkills, "designCount", "designEnd", 31, "green");
+			changeDiagram("design", diagramSkills, "designCount", "designEnd", 47, "green");
 			
 			changeNumber(".skill-1 .percent", percentSkills, "designCount", "designEnd", 30, "%");
 		}
 
 		if((winScroll >= $(".skill-2").offset().top - winHeight + winHeight/4) && (diagramSkills["developCount"] == 0)){			
-			delay(".skill-2",{"transform":"translateX(0)"},300);
+			delay(".skill-2",{"transform":"translateX(0)"},0);
 
-			changeDiagram("develop", diagramSkills, "developCount", "developEnd", 32, "red");
+			changeDiagram("develop", diagramSkills, "developCount", "developEnd", 43, "red");
 			
 			changeNumber(".skill-2 .percent", percentSkills, "developCount", "developEnd", 30, "%");
 		}
 
 		if((winScroll >= $(".skill-3").offset().top - winHeight + winHeight/4) && (diagramSkills["seoCount"] == 0)){			
-			delay(".skill-3",{"transform":"translateX(0)"},600);
+			delay(".skill-3",{"transform":"translateX(0)"},0);
 
-			changeDiagram("seo", diagramSkills, "seoCount", "seoEnd", 30, "orange");
+			changeDiagram("seo", diagramSkills, "seoCount", "seoEnd", 50, "orange");
 			
-			changeNumber(".skill-3 .percent", percentSkills, "seoCount", "seoEnd", 30, "%");
+			changeNumber(".skill-3 .percent", percentSkills, "seoCount", "seoEnd", 40, "%");
 		}
 
 		if((winScroll >= $(".counting").offset().top - winHeight + winHeight/2) && (counting["projectsCount"] == 0)){
