@@ -3,9 +3,9 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Мы создаем сайты | Just Space</title>
-	<!--
-		!Preload styles!
-	-->
+    <!--
+        !Preload styles!
+    -->
 	<style>
 		#preload{
 			position: fixed;
@@ -29,7 +29,8 @@
             font-size: 18px;
         }
 	</style>
-	<link rel="stylesheet" href="css/style.min.css">
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.min.css">
 	<link rel="stylesheet" href="css/font-awesome-4.5.0/css/font-awesome.css">
 </head>
 <body>
