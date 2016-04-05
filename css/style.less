@@ -1,8 +1,7 @@
 @black: #000;
 @black-light: #222222;
-@white: #fafafa;
-@pishachio: #DBDB63;
-@red: #ff0000;
+@white: #ffffff;
+@red: #0097ba;
 @gray: #ddd;
 
 body{
@@ -54,12 +53,16 @@ header{
 	.logo{
 		z-index: 11;
 		position: fixed;
-		line-height: 70px;
 		padding: 0 30px 0;
-		font-size: 30px;
-		.fa{
-			color: @red;
-		}
+		font-size: 26px;
+        img{
+            margin-top: 20px;
+        }
+        span{
+            position: relative;
+            bottom: 5px;
+            left: 5px;
+        }
 	}
 	.text{
 		position: absolute;
@@ -315,7 +318,7 @@ footer{
 
 .reviews{
 	width: 100%;
-	height: 350px;
+	height: 400px;
 	display: flex;
 	justify-content: center;
 	margin: 0 auto 100px;
@@ -514,7 +517,7 @@ footer{
 		transition: all .3s ease-in-out;
 		&:hover{
 			background-color: @black;
-			color: @red;
+			color: @white;
 		}
 	}
 }
@@ -610,6 +613,77 @@ footer{
 }
 
 .portfolio{
-	margin: 0;
 	width: 100%;
+    position: relative;
+	.slider{
+	  background: url('../img/macbook.png') 0 0;
+	  background-size: 100% 100%; /* Должно быть после background, иначе съезжает верстка */
+	  height: 500px;
+	  margin: 0 auto;
+	  width: 70%;
+	}
+
+	.slide{
+	  height: 100%;
+	  width: 100%;
+	  img{
+	    height: 81.5%;
+	    left: 1px;
+	    position: relative;
+	    top: 27px;
+	    width: 80.25%;
+	  }
+	}
+    .left-arrow{
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: @white;
+      font-size: 30px;
+      font-weight: 800;
+      top: 50%;
+      left: 50px;
+      background-color: @red;
+      width: 50px;
+      height: 50px;
+      border-radius: 2px;
+      opacity: .5;
+      cursor: pointer;
+      z-index: 5;
+      transition: all .3s ease-in-out;
+      &:hover{
+        opacity: 1;
+      }
+    }
+    .right-arrow{
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: @white;
+      font-size: 30px;
+      font-weight: 800;
+      top: 50%;
+      right: 50px;
+      background-color: @red;
+      width: 50px;
+      height: 50px;
+      border-radius: 2px;
+      opacity: .5;
+      cursor: pointer;
+      z-index: 5;
+      transition: all .3s ease-in-out;
+      &:hover{
+        opacity: 1;
+      }
+    }
+}
+
+.map{
+  margin: 0;
+}
+
+#slider{ /* Оболочка слайдера */
+  position:relative;
 }

@@ -1,0 +1,663 @@
+body {
+  position: relative;
+  margin: 0;
+  background: #ffffff;
+}
+header {
+  display: block;
+  width: 100%;
+  position: relative;
+  background-image: url(../img/slider.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  transition: all 1s ease-in-out;
+  z-index: 5;
+}
+header nav {
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  height: 70px;
+  text-align: right;
+  background: #ffffff;
+}
+header nav li {
+  height: 100%;
+  list-style: none;
+  display: inline-block;
+}
+header nav li a {
+  font-size: 18px;
+  text-decoration: none;
+  padding: 0 15px 0;
+  display: inline-block;
+  line-height: 70px;
+  height: 100%;
+  color: #000;
+  transition: all 0.3s ease-in-out;
+  box-sizing: border-box;
+  border-color: #0097ba;
+}
+header nav li a:hover {
+  color: #0097ba;
+  border-bottom: 5px solid #0097ba;
+}
+header .logo {
+  z-index: 11;
+  position: fixed;
+  padding: 0 30px 0;
+  font-size: 26px;
+}
+header .logo img {
+  margin-top: 20px;
+}
+header .logo span {
+  position: relative;
+  bottom: 5px;
+  left: 5px;
+}
+header .text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(34, 34, 34, 0.4);
+  color: #ffffff;
+  font-size: 44px;
+}
+header .text a {
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  color: #ffffff;
+  margin-top: 30px;
+  font-size: 28px;
+  border: 1px solid #ffffff;
+  padding: 10px 15px;
+  transition: all 0.3s ease-in-out;
+}
+header .text a:hover {
+  color: #000;
+  background-color: #ffffff;
+}
+header .text-1 {
+  transition: all 1s ease-in-out;
+  opacity: 0;
+  z-index: 1;
+}
+header .text-2 {
+  transition: all 1s ease-in-out;
+  z-index: 5;
+}
+header .text-3 {
+  transition: all 1s ease-in-out;
+  opacity: 0;
+  z-index: 1;
+}
+header .left-arrow {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+  font-size: 30px;
+  font-weight: 800;
+  top: 50%;
+  left: 50px;
+  background-color: #ffffff;
+  width: 50px;
+  height: 50px;
+  border-radius: 2px;
+  opacity: .5;
+  cursor: pointer;
+  z-index: 5;
+  transition: all 0.3s ease-in-out;
+}
+header .left-arrow:hover {
+  opacity: 1;
+}
+header .right-arrow {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+  font-size: 30px;
+  font-weight: 800;
+  top: 50%;
+  right: 50px;
+  background-color: #ffffff;
+  width: 50px;
+  height: 50px;
+  border-radius: 2px;
+  opacity: .5;
+  cursor: pointer;
+  z-index: 5;
+  transition: all 0.3s ease-in-out;
+}
+header .right-arrow:hover {
+  opacity: 1;
+}
+main {
+  overflow: hidden;
+  display: block;
+  position: relative;
+  z-index: 2;
+  background: #ffffff;
+  margin-bottom: 220px;
+}
+article {
+  text-align: center;
+  font-size: 24px;
+  margin: 0 0 50px;
+}
+article p {
+  padding: 0 20%;
+}
+article hr {
+  width: 60%;
+}
+footer {
+  width: 100%;
+  background: #222222;
+  position: fixed;
+  bottom: 0;
+  z-index: -1;
+  color: #ffffff;
+  padding: 40px 0;
+  line-height: 30px;
+  display: none;
+  justify-content: space-around;
+}
+footer h3 {
+  font-size: 24px;
+}
+footer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+footer a {
+  color: #ffffff;
+  text-decoration: none;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+footer .fa {
+  font-size: 18px;
+  color: #0097ba;
+}
+footer .social {
+  width: 25%;
+  text-align: left;
+}
+footer .link {
+  width: 25%;
+  text-align: center;
+}
+footer .contacts {
+  width: 25%;
+  text-align: right;
+}
+footer .contacts a,
+footer .contacts span {
+  color: #0097ba;
+}
+.services {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto 100px;
+}
+.services .service {
+  width: 25%;
+  position: relative;
+  margin: 0 10px;
+  background: #ffffff;
+  color: #ffffff;
+  overflow: hidden;
+  background-size: cover;
+}
+.services .service .promo {
+  width: 100%;
+  height: 400px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.services .service .promo .promo-title {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+  font-size: 36px;
+}
+.services .service .promo .promo-text {
+  width: 100%;
+  height: 100%;
+  transform: translateX(-100%);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  padding: 20px;
+  box-sizing: border-box;
+  transition: all 0.3s ease-in-out;
+}
+.services .service .promo .promo-text a {
+  margin: 0 auto;
+  position: absolute;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  color: #ffffff;
+  margin-top: 30px;
+  font-size: 28px;
+  border: 1px solid #ffffff;
+  padding: 10px 15px;
+  transition: all 0.3s ease-in-out;
+}
+.services .service .promo .promo-text a:hover {
+  color: #000;
+  border-color: #000;
+  background-color: #ffffff;
+}
+.services .service:hover .promo-title {
+  opacity: 0;
+}
+.services .service:hover .promo-text {
+  transform: translateX(0);
+  background-color: rgba(34, 34, 34, 0.8);
+  opacity: 1;
+}
+.services .design {
+  background-image: url("../img/homepage11.jpg");
+  background-position: right;
+}
+.services .develop {
+  background-image: url("../img/mac-headphone.jpg");
+  background-position: center;
+}
+.services .seo {
+  background-image: url("../img/sample-slider-2.jpg");
+  background-position: center;
+}
+.reviews {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto 100px;
+  color: #222222;
+  text-align: left;
+  position: relative;
+  overflow: hidden;
+}
+.reviews .review {
+  position: absolute;
+  left: 20%;
+  right: 20%;
+  top: 0;
+  bottom: 0;
+  width: 60%;
+  margin: 0 10px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  background-color: rgba(34, 34, 34, 0.15);
+  transition: all 1s ease-in-out;
+  transform: translateX(-500%);
+}
+.reviews .review .signature {
+  font-size: 18px;
+  font-style: italic;
+  position: absolute;
+  bottom: 10px;
+  right: 100px;
+}
+.reviews .review p {
+  text-align: justify;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  text-indent: 20px;
+}
+.reviews .left-arrow {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 800;
+  top: 50%;
+  left: 50px;
+  background-color: #0097ba;
+  width: 50px;
+  height: 50px;
+  border-radius: 2px;
+  opacity: .5;
+  cursor: pointer;
+  z-index: 5;
+  transition: all 0.3s ease-in-out;
+}
+.reviews .left-arrow:hover {
+  opacity: 1;
+}
+.reviews .right-arrow {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 800;
+  top: 50%;
+  right: 50px;
+  background-color: #0097ba;
+  width: 50px;
+  height: 50px;
+  border-radius: 2px;
+  opacity: .5;
+  cursor: pointer;
+  z-index: 5;
+  transition: all 0.3s ease-in-out;
+}
+.reviews .right-arrow:hover {
+  opacity: 1;
+}
+#up {
+  display: block;
+  position: relative;
+  text-decoration: none;
+  width: 50px;
+  height: 50px;
+  background: #0097ba;
+  text-align: center;
+  line-height: 50px;
+  color: #ffffff;
+  font-weight: 800;
+  position: fixed;
+  bottom: 10px;
+  right: 50px;
+  font-size: 30px;
+  border-radius: 2px;
+  opacity: .5;
+  cursor: pointer;
+  transform: translateX(150px);
+  transition: all 0.3s ease-in-out;
+  z-index: 10;
+}
+#up:hover {
+  opacity: 1;
+}
+.counting {
+  position: relative;
+  z-index: 2;
+  background-color: #222222;
+  width: 100%;
+  height: 200px;
+  color: #ffffff;
+  text-align: center;
+  font-size: 30px;
+  padding: 15px 20px;
+}
+.counting tr:first-child {
+  font-size: 36px;
+}
+.counting tr td {
+  padding: 5px 15px;
+  width: 33%;
+}
+.clients {
+  width: 100%;
+  padding: 50px 0;
+  margin: 0;
+  background-color: #ddd;
+  display: flex;
+  justify-content: space-around;
+}
+.develops {
+  position: relative;
+  z-index: 2;
+  background-color: #222222;
+  width: 100%;
+  height: 200px;
+  color: #ffffff;
+  text-align: center;
+  font-size: 22px;
+  padding: 15px 20px;
+}
+.develops tr:first-child {
+  font-size: 36px;
+}
+.develops tr:nth-child(2) {
+  font-size: 24px;
+  font-weight: 700;
+}
+.develops tr td {
+  padding: 5px 15px;
+  width: 25%;
+}
+.order {
+  widows: 100%;
+}
+.order input {
+  background-color: #ffffff;
+  width: 60%;
+  max-width: 600px;
+  height: 30px;
+  margin-bottom: 20px;
+  border: 2px solid #000;
+  transition: background 1.3s ease-in-out;
+}
+.order input:focus {
+  outline: 2px solid #0097ba;
+  background-color: rgba(34, 34, 34, 0.05);
+}
+.order textarea {
+  width: 60%;
+  max-width: 600px;
+  margin-bottom: 20px;
+  height: 100px;
+  border: 2px solid #000;
+}
+.order textarea:focus {
+  outline: 2px solid #0097ba;
+}
+.order input[type="submit"] {
+  width: 30%;
+  max-width: 300px;
+  height: 50px;
+  font-size: 18px;
+  background-color: #ffffff;
+  border-color: #000;
+  color: #000;
+  transition: all 0.3s ease-in-out;
+}
+.order input[type="submit"]:hover {
+  background-color: #000;
+  color: #ffffff;
+}
+.video {
+  background-color: #222222;
+  position: relative;
+  display: flex;
+  padding: 50px;
+  height: 315px;
+  overflow: hidden;
+}
+.video #video {
+  border-radius: 2px;
+}
+.video .promo {
+  margin-left: 20px;
+  width: 50%;
+  text-align: right;
+  color: #ffffff;
+}
+.video .promo .promo-title {
+  font-weight: 700;
+}
+.video .promo .skills {
+  background-color: #222222;
+  color: #ffffff;
+}
+.video .promo .skills .skill {
+  position: relative;
+  height: 60px;
+  transition: all 0.7s ease-in-out;
+  transform: translateX(500%);
+}
+.video .promo .skills .skill .percent {
+  font-size: 18px;
+  position: absolute;
+  left: 14px;
+  top: 20px;
+}
+.video .promo .skills .skill .skill-text {
+  position: absolute;
+  left: 80px;
+  top: 15px;
+}
+.video .promo .skills .skill-1 {
+  position: absolute;
+  bottom: 230px;
+  right: 50px;
+}
+.video .promo .skills .skill-2 {
+  position: absolute;
+  bottom: 135px;
+  right: 50px;
+}
+.video .promo .skills .skill-3 {
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+}
+.abouts {
+  padding: 0 20px;
+  position: relative;
+  display: flex;
+  width: 100%;
+  text-align: left;
+}
+.abouts .about {
+  width: 33.333333%;
+  padding: 0 50px;
+  justify-content: space-around;
+  display: inline-block;
+}
+.abouts .about img {
+  width: 100%;
+  height: 200px;
+}
+.abouts .about .promo {
+  height: 100%;
+  width: 100%;
+  color: #000;
+}
+.abouts .about .promo .promo-title {
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #000;
+  font-size: 22px;
+}
+.abouts .about .promo .promo-text {
+  color: #000;
+  font-size: 22px;
+}
+.portfolio {
+  width: 100%;
+  position: relative;
+}
+.portfolio .slider {
+  background: url('../img/macbook.png') 0 0;
+  background-size: 100% 100%;
+  /* Должно быть после background, иначе съезжает верстка */
+  height: 500px;
+  margin: 0 auto;
+  width: 70%;
+}
+.portfolio .slide {
+  height: 100%;
+  width: 100%;
+}
+.portfolio .slide img {
+  height: 81.5%;
+  left: 1px;
+  position: relative;
+  top: 27px;
+  width: 80.25%;
+}
+.portfolio .left-arrow {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 800;
+  top: 50%;
+  left: 50px;
+  background-color: #0097ba;
+  width: 50px;
+  height: 50px;
+  border-radius: 2px;
+  opacity: .5;
+  cursor: pointer;
+  z-index: 5;
+  transition: all 0.3s ease-in-out;
+}
+.portfolio .left-arrow:hover {
+  opacity: 1;
+}
+.portfolio .right-arrow {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 800;
+  top: 50%;
+  right: 50px;
+  background-color: #0097ba;
+  width: 50px;
+  height: 50px;
+  border-radius: 2px;
+  opacity: .5;
+  cursor: pointer;
+  z-index: 5;
+  transition: all 0.3s ease-in-out;
+}
+.portfolio .right-arrow:hover {
+  opacity: 1;
+}
+.map {
+  margin: 0;
+}
+#slider {
+  /* Оболочка слайдера */
+  position: relative;
+}

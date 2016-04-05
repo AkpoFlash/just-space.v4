@@ -14,25 +14,31 @@
 			left: 0;
 			right: 0;
 			z-index: 99;
-			background-color: #fafafa;
+			background-color: #ffffff;
 		}
-		.spinner{
+		#preload .spinner{
 			position: absolute;
 			top: 45%;
 			left: 45%;
-			background-color: #fafafa;
+			background-color: #ffffff;
 		}
+		#preload span{
+            position: absolute;
+            top: 52%;
+            left: 44.5%;
+            font-size: 18px;
+        }
 	</style>
 	<link rel="stylesheet" href="css/style.min.css">
 	<link rel="stylesheet" href="css/font-awesome-4.5.0/css/font-awesome.css">
 </head>
 <body>
 	<div id="preload">
-		<img src="img/preloader.gif" class="spinner" alt="Идет загрузка сайта">
+		<img src="img/preloader.gif" class="spinner" alt="Идет загрузка сайта"> <span>Just Space</span>
 	</div>
 	<header>
 		<div class="logo">
-			<i class="fa fa-cube"></i> Just Space
+            <img src="/img/logo.png" height="30px" alt="Logo Just Space"> <span>Just Space</span>
 		</div>
 		<nav class="menu">
 			<li><a href="#about">О нас</a></li>
@@ -45,21 +51,21 @@
 		<div class="text text-1">
  			Разрабатываем уникальный дизайн
  			<br>
-		 	<a href="#">
+		 	<a href="#order">
 				Заказать
 			</a>
  		</div>
  		<div class="text text-2">
  			Создаем удобные сайты
  			<br>
-		 	<a href="#">
+		 	<a href="#order">
 				Заказать
 			</a>
  		</div>
  		<div class="text text-3">
  			Занимаемся продвижением сайтов
  			<br>
-		 	<a href="#">
+		 	<a href="#order">
 				Заказать
 			</a>
  		</div>
@@ -70,7 +76,7 @@
 		<article id="about">
 			<h2>Веб студия Just Space</h2>
 			<p>
-				Наши отличия на фоне других.
+                Мы специализируемся на создание качественного продукта созданного нами от начала и до конца: создаем дизайн ориентируясь на желания заказчика, разрабатываем сайт используя современные технологии, продвигаем в поисковых системах используя передовые методики SEO оптимизации.
 			</p>
 		</article>
 		<article class="abouts">
@@ -81,7 +87,9 @@
 						Качество работы
 					</div>
 					<div class="promo-text">
-						Вам необходимо создать уникальный дизайн сайта или воспользоваться шаблонным, но подстроенным точно под вас решением? Тогда вы пришли по адресу.
+                        Главное отличие нашей компании от других, это желание обеспечить высокий уровень качества на всех этапах разработки.
+                        <br>
+                        Мы стремимся создавать идеальные сайты.
 					</div>
 				</div>
 			</div>
@@ -92,7 +100,9 @@
 						Привлекательный продукт
 					</div>
 					<div class="promo-text">
-						Занимаемся созданием сайтов любой сложности: корпоративные сайты, сайты-визитки, интернет-магазины, лендинги и другие виды сайтов.
+                        В первую очередь сайт должен привлекать клиентов и показывать ваши лучшие стороны, поэтому независимо от рода деятельности ваш сайт обязан быть привлекательным.
+                        <br>
+                        Мы создаем действительно красивые сайты.
 					</div>
 				</div>
 			</div>
@@ -103,8 +113,10 @@
 						Техническая поддержка
 					</div>
 					<div class="promo-text">
-						Поможем поднять сайт на первые позиции поисковой выдачи. Контекстная реклама, SEO продвижение, продвижение в социальных сетях и многое другое.
-					</div>
+                        Любой продукт рано или поздно нуждается в улучшение и развитие, поэтому немаловажным фактором является дальнейшее сопровождение или модернизация уже готового сайта.
+                        <br>
+                        Мы постоянно улучшаем сайты.
+                    </div>
 				</div>
 			</div>
 		</article>
@@ -209,10 +221,23 @@
 		<article id="portfolio">
 			<h2>Наши работы</h2>
 			<p>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam nisi qui, doloribus impedit necessitatibus similique ea atque dicta. Officia rem veniam quisquam, nihil id. Similique error eligendi autem quidem minus!
+                Вы можете ознакомиться с нашими работами, представленной ниже проекты выполнены полностью нами, с момента создания шаблона, до момента появления сайта на первых позициях поисковой выдачи.
 			</p>
 		</article>
 		<article class="portfolio">
+				<div id="slider-wrap">
+					<div class="slider" id="slider">
+						<div class="slide"><a href="http://bmw-auto.esy.es/" target="_blank"><img src="img/slider/bmw-auto.jpg" alt="bmw-auto.ru"></a></div>
+						<div class="slide"><img src="img/slider/tul-flat.jpg" alt="tul-flat.ru"></div>
+						<div class="slide"><img src="img/slider/taxi-house.jpg" alt="taxi-house.ru"></div>
+						<div class="slide"><a href="http://mwcorp.ru/" target="_blank"><img src="img/slider/mwcorp.jpg" alt="mwcorp.ru"></a></div>
+		                <div class="slide"><a href="http://cooking.mwcorp.ru/" target="_blank"><img src="img/slider/cooking.jpg" alt="mwcorp-cooking.ry"></a></div>
+						<div class="slide"><a href="http://xn----8sbk2abp4ai9h.xn--p1ai/" target="_blank"><img src="img/slider/doly-tula.jpg" alt="doly-tula.ru"></a></div>
+		                <div class="slide"><a href="http://www.gazel-traffic.ru/" target="_blank"><img src="img/slider/gazel-traffic.jpg" alt="gazel-traffic.ru"></a></div>
+					</div>
+                    <div class="left-arrow">&lt;</div>
+                    <div class="right-arrow">&gt;</div>
+				</div>
 		</article>
 		<table class="counting">
 			<tr>
@@ -237,18 +262,18 @@
 		<article class="reviews">
 			<div class="review review-1">
 				<p>
-					Впервые я обратился к веб-студии Infinit в 2010 году с задачей разработать с нуля сайт-визитку рекламирующую услуги по грузоперевозкам на газели, а также продвинуть данный сайт на первые позиции поисковой выдачи.
-				</p>
+                    Впервые я обратился к веб-студии Just Space в 2010 году с задачей разработать с нуля сайт-визитку рекламирующую услуги по грузоперевозкам на газели, а также продвинуть данный сайт на первые позиции поисковой выдачи.
+                </p>
 				<p>
-					В итоге я оказался полностью удоволетворен результатами работы, все поставленные задачи выполнены, а по ключевым словам сайт занимает лидуриующие позиции, также была оказана дополнительная услуга по размещению контекстной рекламы. При расширение планирую вновь заказать работу в веб-студии Infinit.
-				</p>
+                    В итоге я оказался полностью удоволетворен результатами работы, все поставленные задачи выполнены, а по ключевым словам сайт занимает лидуриующие позиции, также была оказана дополнительная услуга по размещению контекстной рекламы. При расширение планирую вновь заказать работу в веб-студии Just Space.
+                </p>
 				<span class="signature">
 					Андрей компания &laquo;Gazell-Traffic&raquo;
 				</span>
 			</div>
 			<div class="review review-2">
 				<p>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure eius, pariatur doloribus autem voluptas officia voluptatem quibusdam! Molestiae quod optio excepturi eum nihil tempore aperiam, rem aspernatur deleniti vero fugit, placeat, voluptate a quasi laboriosam, error dolorum ullam omnis nesciunt veritatis? Blanditiis similique adipisci voluptatibus aliquid quisquam iusto eos reprehenderit.
+                    Наша фирма работает на рынке с 1997 года и долгое время мы имели только основной корпоративный сайт, но в какой то момент было принято решение создать тематические лендинги для повышения продаж. Просмотрев действующие предложения выбрали студию Just Space, в первую очередь из-за привлекательной цены, быстрых сроков и рекомендаций знакомых. Первый макет был готов уже на следующий день, еще сутки работал копирайтер, в итоге через три дня сайт был полностью готов. После этого также договорились о создание контекстной рекламы и поисковом продвижение, данный услуги
 				</p>
 				<span class="signature">
 					Андрей компания &laquo;Тульский центр недвижимости&raquo;
@@ -256,10 +281,10 @@
 			</div>
 			<div class="review review-3">
 				<p>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, nam!
+                    Наткнулся на этих ребят совершенно случайно, я тогда только начинал заниматься дизайном и решил сам сделал макет для своего сайта. Сделать то сделал, а создать сайт некому, начал поиски опрашивая знакомых и вот мне порекомендовали обратиться к ним. После пары встречь обсудили все детали и началась работа, в результате создали крутой сайт учтя все мои пожелания. Спасибо!
 				</p>
 				<span class="signature">
-					Макс Берг
+					Максим компания &laquo;MaxWhere Corporation&raquo;
 				</span>
 			</div>
 			<div class="left-arrow">&lt;</div>
@@ -280,15 +305,18 @@
 		</article>
 		<article class="order">
 			<form method="POST">
-				<input name="FIO" type="text" placeholder="ФИО" required></input><br><input name="email" type="email" placeholder="Email" required></input><br><input name="tel" type="tel" placeholder="Телефон" required></input><br><textarea placeholder="Краткое описание задачи"></textarea><br><input type="submit" value="Отправить заявку"></input>
+				<input name="FIO" type="text" placeholder="ФИО" required><br><input name="email" type="email" placeholder="Email" required><br><input name="tel" type="tel" placeholder="Телефон" required><br><textarea placeholder="Краткое описание задачи"></textarea><br><input type="submit" value="Отправить заявку">
 			</form>
 		</article>
-	</main>
+        <article id="contacts" class="map">
+            <script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=GQ40Uswl44098sFjsrwVflyKkHGcnW94&width=100%&height=350&lang=ru_RU&sourceType=constructor"></script>
+        </article>
+    </main>
 	<footer>
 		<div class="social">
 			<h3>Найдите нас</h3>
 			<ul>
-				<li><i class="fa fa-vk"></i> <a href="https://vk.com/spacedev">Вконтакте</a></li>
+				<li><i class="fa fa-vk"></i> <a href="https://vk.com/justspaceweb">Вконтакте</a></li>
 				<li><i class="fa fa-twitter"></i> <a href="https://twitter.com/Space_Develop">Twitter</a></li>
 				<li><i class="fa fa-facebook"></i> <a href="https://www.facebook.com/groups/931393063615918/">Facebook</a></li>
 			</ul>
@@ -303,6 +331,6 @@
 	</footer>
 	<a id="up" href="#">^</a>
 	<script src="js/jquery.js"></script>
-	<script src="js/script.js"></script>
+	<script src="js/script.min.js"></script>
 </body>
 </html>
