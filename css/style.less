@@ -1,8 +1,17 @@
 @black: #000;
 @black-light: #222222;
 @white: #ffffff;
-@red: #0097ba;
+@secondColor: #0097ba;
 @gray: #ddd;
+
+@text0: 44px;
+@text1: 36px;
+@text2: 30px;
+@text3: 28px;
+@text4: 24px;
+@text5: 22px;
+@text6: 20px;
+@text7: 18px;
 
 body{
 	position: relative;
@@ -15,7 +24,7 @@ header{
 	width: 100%;
 	position: relative;
 	background-image: url(../img/slider.jpg);
-	background-size: cover;
+	background-size: 300% 100%;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -33,7 +42,7 @@ header{
 			list-style: none;
 			display: inline-block;
 			a{
-				font-size: 18px;
+				font-size: @text7;
 				text-decoration: none;
 				padding: 0 15px 0;
 				display: inline-block;
@@ -42,10 +51,10 @@ header{
 				color: @black;
 				transition: all .3s ease-in-out;
 				box-sizing: border-box;
-				border-color: @red;
+				border-color: @secondColor;
 				&:hover{
-					color: @red;
-					border-bottom: 5px solid @red;
+					color: @secondColor;
+					border-bottom: 5px solid @secondColor;
 				}
 			}
 		}
@@ -54,7 +63,7 @@ header{
 		z-index: 11;
 		position: fixed;
 		padding: 0 30px 0;
-		font-size: 26px;
+		font-size: @text3;
         img{
             margin-top: 20px;
         }
@@ -77,14 +86,14 @@ header{
   		align-items: center;
   		background-color: rgba(34,34,34,0.4);
   		color: @white;
-  		font-size: 44px;
+  		font-size: @text0;
 		a{
 			display: inline-block;
 			text-decoration: none;
 			text-align: center;
 			color: @white;
 			margin-top: 30px;
-			font-size: 28px;
+			font-size: @text3;
 			border: 1px solid @white;
 			padding: 10px 15px;
 			transition: all .3s ease-in-out;
@@ -114,7 +123,7 @@ header{
 		justify-content: center;
 		align-items: center;
 		color: @black;
-		font-size: 30px;
+		font-size: @text2;
 		font-weight: 800;
 		top: 50%;
 		left: 50px;
@@ -136,7 +145,7 @@ header{
 		justify-content: center;
 		align-items: center;
 		color: @black;
-		font-size: 30px;
+		font-size: @text2;
 		font-weight: 800;
 		top: 50%;
 		right: 50px;
@@ -165,7 +174,7 @@ main{
 
 article{
 	text-align: center;
-	font-size: 24px;
+	font-size: @text4;
 	margin: 0 0 50px;
 	p{
 		padding: 0 20%;
@@ -187,7 +196,7 @@ footer{
 	display: none;
 	justify-content: space-around;
 	h3{
-		font-size: 24px;
+		font-size: @text4;
 	}
 	ul{
 		list-style: none;
@@ -202,8 +211,8 @@ footer{
 		}
 	}
 	.fa{
-		font-size: 18px;
-		color: @red;
+		font-size: @text7;
+		color: @secondColor;
 	}
 	.social{
 		width: 25%;	
@@ -217,7 +226,7 @@ footer{
 		width: 25%;	
 		text-align: right;
 		a,span{
-			color: @red;
+			color: @secondColor;
 		}
 	}
 }
@@ -250,7 +259,7 @@ footer{
 				right: 0;
 				opacity: 1;
 				transition: opacity .3s ease-in-out;
-				font-size: 36px;
+				font-size: @text1;
 			}
 			.promo-text{
 				width: 100%;
@@ -279,7 +288,7 @@ footer{
 					text-align: center;
 					color: @white;
 					margin-top: 30px;
-					font-size: 28px;
+					font-size: @text3;
 					border: 1px solid @white;
 					padding: 10px 15px;
 					transition: all .3s ease-in-out;
@@ -340,7 +349,7 @@ footer{
 		transition: all 1s ease-in-out;
 		transform: translateX(-500%);
 		.signature{
-			font-size: 18px;
+			font-size: @text7;
 			font-style: italic;
 			position: absolute;
 			bottom: 10px;
@@ -360,11 +369,11 @@ footer{
 		justify-content: center;
 		align-items: center;
 		color: @white;
-		font-size: 30px;
+		font-size: @text2;
 		font-weight: 800;
 		top: 50%;
 		left: 50px;
-		background-color: @red;
+		background-color: @secondColor;
 		width: 50px;
 		height: 50px;
 		border-radius: 2px;
@@ -382,11 +391,11 @@ footer{
 		justify-content: center;
 		align-items: center;
 		color: @white;
-		font-size: 30px;
+		font-size: @text2;
 		font-weight: 800;
 		top: 50%;
 		right: 50px;
-		background-color: @red;
+		background-color: @secondColor;
 		width: 50px;
 		height: 50px;
 		border-radius: 2px;
@@ -406,7 +415,7 @@ footer{
 	text-decoration: none;
 	width: 50px;
 	height: 50px;
-	background: @red;
+	background: @secondColor;
 	text-align: center;
 	line-height: 50px;
 	color: @white;
@@ -414,7 +423,7 @@ footer{
 	position: fixed;
 	bottom: 10px;
 	right: 50px;
-	font-size: 30px;
+	font-size: @text2;
 	border-radius: 2px;
 	opacity: .5;
 	cursor: pointer;
@@ -434,11 +443,11 @@ footer{
 	height: 200px;
 	color: @white;
 	text-align: center;
-	font-size: 30px;
+	font-size: @text2;
 	padding: 15px 20px;
 	tr{
 		&:first-child{
-			font-size: 36px;
+			font-size: @text1;
 		}
 		td{
 			padding: 5px 15px;
@@ -464,14 +473,14 @@ footer{
 	height: 200px;
 	color: @white;
 	text-align: center;
-	font-size: 22px;
+	font-size: @text5;
 	padding: 15px 20px;
 	tr{
 		&:first-child{
-			font-size: 36px;
+			font-size: @text1;
 		}
 		&:nth-child(2){
-			font-size: 24px;
+			font-size: @text4;
 			font-weight: 700;
 		}
 		td{
@@ -492,7 +501,7 @@ footer{
 		border: 2px solid @black;
 		transition: background 1.3s ease-in-out;
 		&:focus{
-			outline: 2px solid @red;
+			outline: 2px solid @secondColor;
 			background-color: rgba(34,34,34,0.05);
 		}
 	}
@@ -503,14 +512,14 @@ footer{
 		height: 100px;
 		border: 2px solid @black;
 		&:focus{
-			outline: 2px solid @red;
+			outline: 2px solid @secondColor;
 		}
 	}
 	input[type="submit"]{
 		width: 30%;
 		max-width: 300px;
 		height: 50px;
-		font-size: 18px;
+		font-size: @text7;
 		background-color: @white;
 		border-color: @black;
 		color: @black;
@@ -549,7 +558,7 @@ footer{
 				transition: all .7s ease-in-out;
 				transform: translateX(500%);
 				.percent{
-					font-size: 18px;
+					font-size: @text7;
 					position: absolute;
 					left: 14px;
 					top: 20px;
@@ -602,11 +611,11 @@ footer{
 				font-weight: 700;
 				margin-bottom: 15px;
 				color: @black;
-				font-size: 22px;
+				font-size: @text5;
 			}
 			.promo-text{
 				color: @black;
-				font-size: 22px;
+				font-size: @text5;
 			}
 		}
 	}
@@ -640,11 +649,11 @@ footer{
       justify-content: center;
       align-items: center;
       color: @white;
-      font-size: 30px;
+      font-size: @text2;
       font-weight: 800;
       top: 50%;
       left: 50px;
-      background-color: @red;
+      background-color: @secondColor;
       width: 50px;
       height: 50px;
       border-radius: 2px;
@@ -662,11 +671,11 @@ footer{
       justify-content: center;
       align-items: center;
       color: @white;
-      font-size: 30px;
+      font-size: @text2;
       font-weight: 800;
       top: 50%;
       right: 50px;
-      background-color: @red;
+      background-color: @secondColor;
       width: 50px;
       height: 50px;
       border-radius: 2px;
@@ -686,4 +695,119 @@ footer{
 
 #slider{ /* Оболочка слайдера */
   position:relative;
+}
+
+@media(max-width: 1150px) {
+  article{
+    font-size: @text5;
+  }
+
+  header{
+    nav{
+      li{
+        a{
+          font-size: @text7;
+          padding: 0 10px 0;
+        }
+      }
+    }
+    .logo{
+      font-size: @text3;
+    }
+    .text{
+      font-size: @text0;
+      a{
+        font-size: @text3;
+      }
+    }
+  }
+
+  .abouts{
+    .about{
+      img{
+        height: 170px;
+      }
+      .promo{
+        .promo-title{
+          font-size: @text6;
+        }
+        .promo-text{
+          font-size: @text6;
+        }
+      }
+    }
+  }
+  .develops{
+    height: 200px;
+    font-size: @text6;
+    tr{
+      &:first-child{
+        font-size: @text2;
+      }
+      &:nth-child(2){
+        font-size: @text5;
+      }
+    }
+  }
+
+  .services{
+    .service{
+      .promo{
+        height: 350px;
+        .promo-title{
+          font-size: @text3;
+        }
+        .promo-text{
+          a{
+            font-size: @text5;
+          }
+        }
+      }
+    }
+  }
+
+  .video{
+    .promo{
+      .skills{
+        .skill-1{
+          width: 250px;
+          right: 0%;
+        }
+        .skill-2{
+          width: 250px;
+          right: 0%;
+        }
+        .skill-3{
+          width: 250px;
+          right: 0%;
+        }
+      }
+    }
+  }
+
+  .portfolio {
+    .slider {
+      height: 420px;
+    }
+    .slide{
+      img{
+        top: 22px;
+      }
+    }
+  }
+
+  .counting{
+    font-size: @text4;
+  }
+
+  .reviews{
+    height: 400px;
+    .review{
+      font-size: @text6;
+      .signature{
+        font-size: @text7;
+      }
+    }
+  }
+
 }

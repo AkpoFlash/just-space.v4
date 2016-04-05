@@ -8,7 +8,7 @@ header {
   width: 100%;
   position: relative;
   background-image: url(../img/slider.jpg);
-  background-size: cover;
+  background-size: 300% 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -48,7 +48,7 @@ header .logo {
   z-index: 11;
   position: fixed;
   padding: 0 30px 0;
-  font-size: 26px;
+  font-size: 28px;
 }
 header .logo img {
   margin-top: 20px;
@@ -660,4 +660,80 @@ footer .contacts span {
 #slider {
   /* Оболочка слайдера */
   position: relative;
+}
+@media (max-width: 1150px) {
+  article {
+    font-size: 22px;
+  }
+  header nav li a {
+    font-size: 18px;
+    padding: 0 10px 0;
+  }
+  header .logo {
+    font-size: 28px;
+  }
+  header .text {
+    font-size: 44px;
+  }
+  header .text a {
+    font-size: 28px;
+  }
+  .abouts .about img {
+    height: 170px;
+  }
+  .abouts .about .promo .promo-title {
+    font-size: 20px;
+  }
+  .abouts .about .promo .promo-text {
+    font-size: 20px;
+  }
+  .develops {
+    height: 200px;
+    font-size: 20px;
+  }
+  .develops tr:first-child {
+    font-size: 30px;
+  }
+  .develops tr:nth-child(2) {
+    font-size: 22px;
+  }
+  .services .service .promo {
+    height: 350px;
+  }
+  .services .service .promo .promo-title {
+    font-size: 28px;
+  }
+  .services .service .promo .promo-text a {
+    font-size: 22px;
+  }
+  .video .promo .skills .skill-1 {
+    width: 250px;
+    right: 0%;
+  }
+  .video .promo .skills .skill-2 {
+    width: 250px;
+    right: 0%;
+  }
+  .video .promo .skills .skill-3 {
+    width: 250px;
+    right: 0%;
+  }
+  .portfolio .slider {
+    height: 420px;
+  }
+  .portfolio .slide img {
+    top: 22px;
+  }
+  .counting {
+    font-size: 24px;
+  }
+  .reviews {
+    height: 400px;
+  }
+  .reviews .review {
+    font-size: 20px;
+  }
+  .reviews .review .signature {
+    font-size: 18px;
+  }
 }
