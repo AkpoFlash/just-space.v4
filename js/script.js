@@ -210,6 +210,21 @@ $(document).ready(function(){
         }, 1500);
         e.preventDefault();
     });
+
+	$("#order_sub").on("click",function(){
+        var obj = {
+            name:$("#name").val(),
+            email:$("#email").val(),
+            telephone:$("#telephone").val(),
+            description:$("#description").val()
+        }
+
+        $.ajax({
+            type: "POST",
+            url: "../include/ajax.php",
+            data: obj,
+        });
+	});
 });
 
 //portfolio slider

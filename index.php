@@ -1,3 +1,7 @@
+<?
+    require_once($_SERVER['DOCUMENT_ROOT']."/include/const.php");
+    //require_once($_SERVER['DOCUMENT_ROOT']."/include/init.php");
+?>
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -305,8 +309,8 @@
 			</p>
 		</article>
 		<article class="order">
-			<form method="POST">
-				<input name="FIO" type="text" placeholder="ФИО" required><br><input name="email" type="email" placeholder="Email" required><br><input name="tel" type="tel" placeholder="Телефон" required><br><textarea placeholder="Краткое описание задачи"></textarea><br><input type="submit" value="Отправить заявку">
+			<form action="index.php" method="POST">
+				<input name="name" type="text" id="name" <?php echo "value=\"".$_POST['name']."\""; ?> placeholder="ФИО" required><br><input name="email" type="email" id="email" <?php echo "value=\"".$_POST['email']."\""; ?> placeholder="Email" required><br><input name="telephone" type="tel" id="telephone" <?php echo "value=\"".$_POST['telephone']."\""; ?> placeholder="Телефон" required><br><textarea name="description" id="description" placeholder="Краткое описание задачи"><?php echo $_POST['description']; ?></textarea><br><input id="order_sub" type="button" name="order_sub" value="Отправить заявку">
 			</form>
 		</article>
         <article id="contacts" class="map">

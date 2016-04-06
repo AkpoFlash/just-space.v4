@@ -485,7 +485,7 @@ footer .contacts span {
 .order textarea:focus {
   outline: 2px solid #0097ba;
 }
-.order input[type="submit"] {
+.order input[type="button"] {
   width: 30%;
   max-width: 300px;
   height: 50px;
@@ -495,7 +495,7 @@ footer .contacts span {
   color: #000;
   transition: all 0.3s ease-in-out;
 }
-.order input[type="submit"]:hover {
+.order input[type="button"]:hover {
   background-color: #000;
   color: #ffffff;
 }
