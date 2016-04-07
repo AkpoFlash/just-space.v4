@@ -152,7 +152,7 @@ main {
   position: relative;
   z-index: 2;
   background: #ffffff;
-  margin-bottom: 220px;
+  margin: 0 0 220px 0;
 }
 article {
   text-align: center;
@@ -211,6 +211,11 @@ footer .contacts {
 footer .contacts a,
 footer .contacts span {
   color: #0097ba;
+}
+.hover-nav {
+  color: #0097ba;
+  border-bottom: 5px solid #0097ba;
+  transition: all 0.3s ease-in-out;
 }
 .services {
   display: flex;
@@ -485,7 +490,7 @@ footer .contacts span {
 .order textarea:focus {
   outline: 2px solid #0097ba;
 }
-.order input[type="button"] {
+.order input[type="submit"] {
   width: 30%;
   max-width: 300px;
   height: 50px;
@@ -495,7 +500,7 @@ footer .contacts span {
   color: #000;
   transition: all 0.3s ease-in-out;
 }
-.order input[type="button"]:hover {
+.order input[type="submit"]:hover {
   background-color: #000;
   color: #ffffff;
 }
@@ -660,6 +665,50 @@ footer .contacts span {
 #slider {
   /* Оболочка слайдера */
   position: relative;
+}
+.popup {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 98;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.popup .done {
+  display: none;
+}
+.popup .error {
+  display: none;
+}
+.popup .window {
+  background-color: #ffffff;
+  position: absolute;
+  border-radius: 2px;
+  padding: 15px 25px;
+  top: 40%;
+  left: 33%;
+  width: 400px;
+  height: 200px;
+  text-align: center;
+}
+.popup .window p {
+  font-size: 28px;
+}
+.popup .window input[type="button"] {
+  width: 30%;
+  max-width: 300px;
+  height: 50px;
+  font-size: 18px;
+  background-color: #ffffff;
+  border-color: #000;
+  color: #000;
+  transition: all 0.3s ease-in-out;
+}
+.popup .window input[type="button"]:hover {
+  background-color: #000;
+  color: #ffffff;
 }
 @media (max-width: 1150px) {
   article {

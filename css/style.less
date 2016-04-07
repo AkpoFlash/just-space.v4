@@ -169,7 +169,7 @@ main{
 	position: relative;
 	z-index: 2;
 	background: @white;
-	margin-bottom: 220px;
+	margin:0 0 220px 0;
 }
 
 article{
@@ -229,6 +229,12 @@ footer{
 			color: @secondColor;
 		}
 	}
+}
+
+.hover-nav{
+  color: @secondColor;
+  border-bottom: 5px solid @secondColor;
+  transition: all .3s ease-in-out;
 }
 
 .services{
@@ -515,7 +521,7 @@ footer{
 			outline: 2px solid @secondColor;
 		}
 	}
-	input[type="button"]{
+	input[type="submit"]{
 		width: 30%;
 		max-width: 300px;
 		height: 50px;
@@ -695,6 +701,51 @@ footer{
 
 #slider{ /* Оболочка слайдера */
   position:relative;
+}
+
+.popup{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 98;
+  display: none;
+  background-color: rgba(0,0,0,0.5);
+  .done{
+    display: none;
+  }
+  .error{
+    display: none;
+  }
+  .window{
+    background-color: @white;
+    position: absolute;
+    border-radius: 2px;
+    padding: 15px 25px;
+    top: 40%;
+    left: 33%;
+    width: 400px;
+    height: 200px;
+    text-align: center;
+    p{
+      font-size: @text3;
+    }
+    input[type="button"]{
+      width: 30%;
+      max-width: 300px;
+      height: 50px;
+      font-size: @text7;
+      background-color: @white;
+      border-color: @black;
+      color: @black;
+      transition: all .3s ease-in-out;
+      &:hover{
+        background-color: @black;
+        color: @white;
+      }
+    }
+  }
 }
 
 @media(max-width: 1150px) {

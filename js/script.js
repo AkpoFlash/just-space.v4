@@ -2,6 +2,7 @@ var curPosition = 50;
 var curSlide = 2;
 var topShow = 800;
 var winHeight = $(window).height();
+var winWidth = $(window).width();
 var winScroll = $(this).scrollTop();
 var countReview = 2;
 var counting = {
@@ -92,14 +93,36 @@ function drawCircle(id,x,y,r,start,end,flag,color){
 	obCanvas.closePath();
 }
 
+function positionCenter(class1, class2){
+    var left = winWidth/2 - $(class1).width()/2;
+    var top = winHeight/2 - $(class1).height()/2;
+    $(class2).css({"left":left,"top":top});
+}
+
+function changeSection(classArray, winScroll){
+    var flag = true;
+
+    for(var i = 0; i < classArray.length && flag; i++) {
+        if (winScroll >= $(classArray[i]).offset().top - 100) {
+            $("a[href='" + classArray[i] + "']").addClass("hover-nav");
+            classArray.splice(i,1);
+            flag = false;
+        }
+    }
+
+    for(var i = 0; i < classArray.length; i++){
+        $("a[href='" + classArray[i] + "']").removeClass("hover-nav");
+    }
+}
+
 $(document).ready(function(){
 	$(window).on("load",function(){
 		$(".spinner").fadeOut(750);
 		$("#preload").fadeOut(1500);
-	});	
+	});
 
 	$("header").css({"height" : winHeight});
-		
+
 	$(".review-2").css({"transform":"translateX(0)"});
 	$("header .left-arrow").on("click",function(){
 		if(curPosition == 0){
@@ -184,15 +207,7 @@ $(document).ready(function(){
 			$("footer").css({"display" : "flex"}); // fix show footer when load page
 		}
 
-		if(winScroll > $(".blogs").offset().top - winHeight){
-			var offset = winScroll - $(".blogs").offset().top + winHeight / 3;
-			$(".blog-1").css({
-				"transform": "translate("+ Math.min(0,offset) + "px," + -Math.min(0,offset)/2 + "px)" 
-			});
-			$(".blog-3").css({
-				"transform": "translate("+ -Math.min(0,offset) + "px," + -Math.min(0,offset)/2 + "px)" 
-			});
-		}
+        changeSection(["#contacts","#order","#review","#portfolio","#service","#about"],winScroll);
 	});
 
 	//smooth scroll
@@ -211,20 +226,44 @@ $(document).ready(function(){
         e.preventDefault();
     });
 
-	$("#order_sub").on("click",function(){
+	$("#order_sub").on("click",function(e){
+        var name = $("#name").val();
+        var email = $("#email").val();
+        var telephone = $("#telephone").val();
+        var description = $("#description").val();
         var obj = {
-            name:$("#name").val(),
-            email:$("#email").val(),
-            telephone:$("#telephone").val(),
-            description:$("#description").val()
-        }
+            "name": name,
+            "email": email,
+            "telephone": telephone,
+            "description": description
+        };
 
-        $.ajax({
-            type: "POST",
-            url: "../include/ajax.php",
-            data: obj,
-        });
+        if(name != "" && email != "" && telephone != "") {
+            e.preventDefault();
+            $.ajax({
+                type: "POST",
+                url: "../include/ajax.php",
+                data: obj,
+                dataType: "json",
+                success: function () {
+                    positionCenter(".window", ".popup .window");
+                    $(".popup").fadeIn(400);
+                    $(".popup .done").fadeIn(400);
+                },
+                error: function () {
+                    positionCenter(".window", ".popup .window");
+                    $(".popup").fadeIn(400);
+                    $(".popup .error").fadeIn(400);
+                }
+            });
+        }
 	});
+
+    $(".close_window").on("click",function(){
+        $(".popup").fadeOut(400);
+        $(".popup .done").fadeOut(400);
+        $(".popup .error").fadeOut(400);
+    });
 });
 
 //portfolio slider
