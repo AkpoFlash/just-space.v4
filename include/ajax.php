@@ -13,5 +13,6 @@
 
     if(mail("akpoflash@gmail.com","Just Space - Заказ", $name . $telephone . $email . $description)){
         mail($_POST["email"],"Just Space", "Благодарим вас за оформиление заказа на нашем сайте, по указанному телефону с вами свяжется наш менеджер.");
+        echo json_encode("OK");
     }
 ?>

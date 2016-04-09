@@ -250,13 +250,11 @@ $(document).ready(function(){
                     $(".popup").fadeIn(400);
                     $(".popup .done").fadeIn(400);
                 },
-				/*
                 error: function () {
                     positionCenter(".window", ".popup .window");
                     $(".popup").fadeIn(400);
                     $(".popup .error").fadeIn(400);
                 }
-                */
             });
         }
 	});
