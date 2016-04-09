@@ -336,8 +336,8 @@
 			<h3>Найдите нас</h3>
 			<ul>
 				<li><i class="fa fa-vk"></i> <a href="https://vk.com/justspaceweb">Вконтакте</a></li>
-				<li><i class="fa fa-twitter"></i> <a href="https://twitter.com/Space_Develop">Twitter</a></li>
-				<li><i class="fa fa-facebook"></i> <a href="https://www.facebook.com/groups/931393063615918/">Facebook</a></li>
+				<li><i class="fa fa-twitter"></i> <a href="https://twitter.com/JustSpaceWeb">Twitter</a></li>
+				<li><i class="fa fa-instagram"></i> <a href="https://www.instagram.com/justspaceweb/">Instagram</a></li>
 			</ul>
 		</div>
 		<div class="contacts">
