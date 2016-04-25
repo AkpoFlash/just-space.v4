@@ -12,6 +12,9 @@
 @text5: 22px;
 @text6: 20px;
 @text7: 18px;
+@text8: 16px;
+@text9: 14px;
+@text10: 12px;
 
 body{
 	position: relative;
@@ -25,7 +28,7 @@ header{
 	position: relative;
 	background-image: url(../img/slider.jpg);
 	background-size: 300% 100%;
-	background-position: center;
+	background-position: center center;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	transition: all 1s ease-in-out;
@@ -860,5 +863,118 @@ footer{
       }
     }
   }
+}
 
+@media(max-width: 950px) {
+  article{
+	font-size: @text6;
+  }
+
+  header{
+	nav{
+	  li{
+		a{
+		  font-size: @text8;
+		  padding: 0 5px 0;
+		}
+	  }
+	}
+	.logo{
+	  font-size: @text5;
+	}
+	.text{
+	  font-size: @text0;
+	  a{
+		font-size: @text3;
+	  }
+	}
+  }
+
+  .abouts{
+	.about{
+	  img{
+		height: 170px;
+	  }
+	  .promo{
+		.promo-title{
+		  font-size: @text6;
+		}
+		.promo-text{
+		  font-size: @text6;
+		}
+	  }
+	}
+  }
+  .develops{
+	height: 200px;
+	font-size: @text6;
+	tr{
+	  &:first-child{
+		font-size: @text2;
+	  }
+	  &:nth-child(2){
+		font-size: @text5;
+	  }
+	}
+  }
+
+  .services{
+	.service{
+	  .promo{
+		height: 350px;
+		.promo-title{
+		  font-size: @text3;
+		}
+		.promo-text{
+		  a{
+			font-size: @text5;
+		  }
+		}
+	  }
+	}
+  }
+
+  .video{
+	.promo{
+	  .skills{
+		.skill-1{
+		  width: 250px;
+		  right: 0%;
+		}
+		.skill-2{
+		  width: 250px;
+		  right: 0%;
+		}
+		.skill-3{
+		  width: 250px;
+		  right: 0%;
+		}
+	  }
+	}
+  }
+
+  .portfolio {
+	.slider {
+	  height: 420px;
+	}
+	.slide{
+	  img{
+		top: 22px;
+	  }
+	}
+  }
+
+  .counting{
+	font-size: @text4;
+  }
+
+  .reviews{
+	height: 400px;
+	.review{
+	  font-size: @text6;
+	  .signature{
+		font-size: @text7;
+	  }
+	}
+  }
 }

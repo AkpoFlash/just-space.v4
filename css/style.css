@@ -9,7 +9,7 @@ header {
   position: relative;
   background-image: url(../img/slider.jpg);
   background-size: 300% 100%;
-  background-position: center;
+  background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   transition: all 1s ease-in-out;
@@ -720,6 +720,82 @@ footer .contacts span {
   }
   header .logo {
     font-size: 28px;
+  }
+  header .text {
+    font-size: 44px;
+  }
+  header .text a {
+    font-size: 28px;
+  }
+  .abouts .about img {
+    height: 170px;
+  }
+  .abouts .about .promo .promo-title {
+    font-size: 20px;
+  }
+  .abouts .about .promo .promo-text {
+    font-size: 20px;
+  }
+  .develops {
+    height: 200px;
+    font-size: 20px;
+  }
+  .develops tr:first-child {
+    font-size: 30px;
+  }
+  .develops tr:nth-child(2) {
+    font-size: 22px;
+  }
+  .services .service .promo {
+    height: 350px;
+  }
+  .services .service .promo .promo-title {
+    font-size: 28px;
+  }
+  .services .service .promo .promo-text a {
+    font-size: 22px;
+  }
+  .video .promo .skills .skill-1 {
+    width: 250px;
+    right: 0%;
+  }
+  .video .promo .skills .skill-2 {
+    width: 250px;
+    right: 0%;
+  }
+  .video .promo .skills .skill-3 {
+    width: 250px;
+    right: 0%;
+  }
+  .portfolio .slider {
+    height: 420px;
+  }
+  .portfolio .slide img {
+    top: 22px;
+  }
+  .counting {
+    font-size: 24px;
+  }
+  .reviews {
+    height: 400px;
+  }
+  .reviews .review {
+    font-size: 20px;
+  }
+  .reviews .review .signature {
+    font-size: 18px;
+  }
+}
+@media (max-width: 950px) {
+  article {
+    font-size: 20px;
+  }
+  header nav li a {
+    font-size: 16px;
+    padding: 0 5px 0;
+  }
+  header .logo {
+    font-size: 22px;
   }
   header .text {
     font-size: 44px;
