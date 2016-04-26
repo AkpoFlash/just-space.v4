@@ -68,6 +68,11 @@
 			<li><a href="#contacts">Контакты</a></li>
 			<li><a href="#order">Оформить заказ</a></li>
 		</nav>
+		<div class="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+		</div>
 		<div class="text text-1">
  			Разрабатываем уникальный дизайн
  			<br>

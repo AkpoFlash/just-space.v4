@@ -123,6 +123,21 @@ $(document).ready(function(){
 
 	$("header").css({"height" : winHeight});
 
+	if($(".burger").css("display") == "block"){
+        $(".burger").on("click", function() {
+            if($("header nav li").css("height") == "0px"){
+                $("header nav li").css({"height": "100%"});
+            }
+            else{
+                $("header nav li").css({"height": 0});
+            }
+        });
+        $("header nav li").on("click", function() {
+            $("header nav li").css({"height": 0});
+        });
+    }
+
+
 	$(".review-2").css({"transform":"translateX(0)"});
 	$("header .left-arrow").on("click",function(){
 		if(curPosition == 0){
