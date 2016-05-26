@@ -51,6 +51,9 @@ nav li a:hover {
 .table tr:first-child {
   font-weight: 800;
 }
+.table tr td {
+  padding: 5px 10px;
+}
 .popup {
   position: fixed;
   top: 0;
