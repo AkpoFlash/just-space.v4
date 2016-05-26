@@ -1,21 +1,62 @@
 <?php
-	if(isset($_POST["order_sub"])){
-		$name = "ФИО заказчика: " . $_POST["name"] . "\n";
-		$telephone = "Контактный телефон: " . $_POST["telephone"] . "\n";
-		$email = "Контактный email: " . $_POST["email"] . "\n";
-		$description = "Описание задачи: " . $_POST["description"] . "\n";
-		$separator = "------------------------------------------------------------------\n";
-		$file = fopen("../link/messange.txt","a+");
-		fputs($file, $name);
-		fputs($file, $telephone);
-		fputs($file, $email);
-		fputs($file, $description);
-		fputs($file, $separator);
-		fclose($file);
+    session_start();
 
-		if(mail("akpoflash@gmail.com","Just Space - Заказ", $name . $telephone . $email . $description)){
-			$_SESSION["event"]["file"] = "Ваша заявка отправлена. Мы с вами свяжемся.";
-			mail($_POST["email"],"Just Space", "Благодарим вас за оформиление заказа на нашем сайте, по указанному телефону с вами свяжется наш менеджер.");
-		}
-	}
+    /**
+     * Автолоад для классов
+     */
+    spl_autoload_register(function ($class) {
+        require_once($_SERVER['DOCUMENT_ROOT'].'/classes/' . $class . '.php');
+    });
+
+    /**
+     * @param $url
+     * Редирект на страницу
+     */
+    function redirect_to($url){
+        header('Location: '.$url);
+    }
+
+    /**
+     * @param $user_name
+     * @return bool
+     * Проверка прав админа
+     */
+    function access_to_admin_panel($user_name){
+        $CUser = new User();
+        $arUser = $CUser->GetUser($user_name)->Fetch();
+        if($arUser["rights"] == "7"){
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+
+    /**
+     * @param $file_name
+     * @param $record
+     * Общая функция для записи в логи
+     */
+    function write_to_log($file_name, $record){
+        $file = fopen($_SERVER['DOCUMENT_ROOT'].$file_name, "a+");
+        fputs($file, "[".date("d.m.Y H:i:s")."] ".$record);
+        fclose($file);
+    }
+
+    /**
+     * @param $password
+     * @return bool|string
+     * Обертка над password_hash
+     */
+    function password_hashing($password){
+        return password_hash($password, PASSWORD_DEFAULT);
+    }
+
+    /*
+    function (){
+        //find
+        //create
+        //delete
+    }
+    */
 ?>
