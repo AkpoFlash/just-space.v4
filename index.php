@@ -106,7 +106,7 @@
 		</article>
 		<article class="abouts">
 			<div class="about about-1">
-				<img src="img/homepage11.jpg">
+				<img src="img/quality.jpg">
 				<div class="promo">
 					<div class="promo-title">
 						Качество работы
@@ -119,7 +119,7 @@
 				</div>
 			</div>
 			<div class="about about-2">
-				<img src="img/mac-headphone.jpg">
+				<img src="img/beauty.jpg">
 				<div class="promo">
 					<div class="promo-title">
 						Привлекательный продукт
@@ -132,7 +132,7 @@
 				</div>
 			</div>
 			<div class="about about-3">
-				<img src="img/sample-slider-2.jpg">
+				<img src="img/support.jpg">
 				<div class="promo">
 					<div class="promo-title">
 						Техническая поддержка

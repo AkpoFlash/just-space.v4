@@ -46,4 +46,38 @@ $(document).ready(function(){
             });
         }
     });
+
+    $("#create_backup_sub").on("click",function(e){
+        var filename = $("#create_backup_filename").val();
+        var obj = {
+            "filename": filename,
+        };
+
+        e.preventDefault();
+        $.ajax({
+            type: "POST",
+            url: "../ajax/create_backup.php",
+            data: obj,
+            success: function () {
+                $("#backup_list").append("<tr><td></td></tr>");
+            },
+        });
+    });
+
+    $("#load_backup_sub").on("click",function(e){
+        var filename = $("#load_backup_filename").val();
+        var obj = {
+            "filename": filename,
+        };
+
+        e.preventDefault();
+        $.ajax({
+            type: "POST",
+            url: "../ajax/load_backup.php",
+            data: obj,
+            dataType: "json",
+            success: function () {
+            },
+        });
+    });
 });

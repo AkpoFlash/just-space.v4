@@ -22,8 +22,21 @@
 <?
     require_once($_SERVER['DOCUMENT_ROOT'] . "/include/admin.menu.php");
 ?>
+
+    <h3>Создать резервную копию</h3>
+    <form action="index.php" method="POST">
+        <input type="text" id="create_backup_filename" name="create_backup_filename" placeholder="Название backup'а">
+        <input type="submit" id="create_backup_sub" name="create_backup_sub" value="Создать">
+    </form>
+
+    <h3>Востановить из резервной копии</h3>
+    <form action="index.php" method="POST">
+        <input type="text" id="load_backup_filename" name="load_backup_filename" placeholder="Название backup'а">
+        <input type="submit" id="load_backup_sub" name="load_backup_sub" value="Востановить">
+    </form>
+
     <h3>Список резервных копий</h3>
-    <table class="table">
+    <table class="table" id="backup_list">
         <tr>
             <td>№</td>
             <td>Файл</td>

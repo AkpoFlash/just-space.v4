@@ -16,6 +16,11 @@
 @text9: 14px;
 @text10: 12px;
 
+@font-face{
+  font-family: Letter;
+  src: url('Letter.otf');
+}
+
 body{
 	position: relative;
 	margin: 0;
@@ -363,7 +368,10 @@ footer{
 	position: relative;
 	overflow: hidden;
 	.review{
-		position: absolute;
+        font-family: Letter;
+        font-size: 1.3em;
+        background-image: url('../img/linedpaper.png');
+        position: absolute;
 		left: 20%;
 		right: 20%;
 		top: 0;
@@ -371,8 +379,8 @@ footer{
 		width: 60%;
 		margin: 0 10px;
 		padding: 10px 15px;
-		border-radius: 5px;
-		background-color: rgba(34,34,34,0.15);
+        border: 1px solid @gray;
+		border-radius: 5px 0 5px 0;
 		transition: all 1s ease-in-out;
 		transform: translateX(-500%);
 		.signature{

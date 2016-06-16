@@ -23,4 +23,9 @@
     * Путь к директории хранящей backup'ы
     */
     const DB_BACKUP = "/backup/";
+
+    /*
+    * Путь к mysql
+    */
+    const DB_MYSQL = "C:/Server/mysql/";
 ?>
