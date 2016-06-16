@@ -805,10 +805,10 @@ footer .contacts span {
     height: 400px;
   }
   .reviews .review {
-    font-size: 20px;
+    font-size: 24px;
   }
   .reviews .review .signature {
-    font-size: 18px;
+    font-size: 22px;
   }
 }
 @media (max-width: 950px) {
@@ -848,7 +848,7 @@ footer .contacts span {
     font-size: 22px;
   }
   .services .service .promo {
-    height: 350px;
+    height: 370px;
   }
   .services .service .promo .promo-title {
     font-size: 28px;
@@ -881,10 +881,25 @@ footer .contacts span {
     height: 400px;
   }
   .reviews .review {
-    font-size: 20px;
+    font-size: 24px;
   }
   .reviews .review .signature {
+    font-size: 22px;
+  }
+  footer h3 {
+    font-size: 24px;
+  }
+  footer .fa {
     font-size: 18px;
+  }
+  footer .social {
+    width: 30%;
+  }
+  footer .link {
+    width: 15%;
+  }
+  footer .contacts {
+    width: 30%;
   }
 }
 @media (max-width: 800px) {
@@ -920,5 +935,20 @@ footer .contacts span {
   }
   header .text a {
     font-size: 28px;
+  }
+  footer h3 {
+    font-size: 24px;
+  }
+  footer .fa {
+    font-size: 18px;
+  }
+  footer .social {
+    width: 40%;
+  }
+  footer .link {
+    width: 0%;
+  }
+  footer .contacts {
+    width: 40%;
   }
 }
