@@ -178,7 +178,7 @@ $(document).ready(function(){
 	});
 
 	$("#up").on("click", function(e){
-		$("html, body").animate({scrollTop: 0}, 1000);
+		$("html, body").animate({scrollTop: 0}, winScroll);
 		e.preventDefault();
 	});
 
@@ -227,17 +227,23 @@ $(document).ready(function(){
 
 	//smooth scroll
 	$(".menu a[href*='#'], .text a[href*='#']").on("click", function(e){
-		var anchor = $(this); 
-		$('html, body').stop().animate({ 
-			scrollTop: $(anchor.attr('href')).offset().top - 90 
-		}, 1500);
+		var anchor = $(this);
+		$('html, body').stop().animate({
+			    scrollTop: $(anchor.attr('href')).offset().top - 90
+		    },
+            Math.abs($(anchor.attr('href')).offset().top - 90 - winScroll),
+            "swing"
+        );
 		e.preventDefault(); 
 	});
     $(".menu a[href='#contacts']").on("click", function(e){
         var anchor = $(this);
         $('html, body').stop().animate({
-            scrollTop: $(anchor.attr('href')).offset().top
-        }, 1500);
+                scrollTop: $(anchor.attr('href')).offset().top
+            },
+            Math.abs($(anchor.attr('href')).offset().top - 90 - winScroll),
+            "swing"
+        );
         e.preventDefault();
     });
 
