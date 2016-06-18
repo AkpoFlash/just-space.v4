@@ -103,7 +103,7 @@ function changeSection(classArray, winScroll){
     var flag = true;
 
     for(var i = 0; i < classArray.length && flag; i++) {
-        if (winScroll >= $(classArray[i]).offset().top - 100) {
+        if ($(classArray[i]).length > 0 && winScroll >= $(classArray[i]).offset().top - 100) {
             $("a[href='" + classArray[i] + "']").addClass("hover-nav");
             classArray.splice(i,1);
             flag = false;
@@ -191,7 +191,7 @@ $(document).ready(function(){
 			$("#up").css({"transform": "translateX(150px)"});
 		}
 		
-		if((winScroll >= $(".skill-1").offset().top - winHeight + winHeight/4) && (diagramSkills["designCount"] == 0)){
+		if($(".skill-1").length > 0 && (winScroll >= $(".skill-1").offset().top - winHeight + winHeight/4) && (diagramSkills["designCount"] == 0)){
 			delay(".skill-1",{"transform":"translateX(0)"},0);
 
 			changeDiagram("design", diagramSkills, "designCount", "designEnd", 47, "green");
@@ -199,7 +199,7 @@ $(document).ready(function(){
 			changeNumber(".skill-1 .percent", percentSkills, "designCount", "designEnd", 30, "%");
 		}
 
-		if((winScroll >= $(".skill-2").offset().top - winHeight + winHeight/4) && (diagramSkills["developCount"] == 0)){			
+		if($(".skill-2").length > 0 && (winScroll >= $(".skill-2").offset().top - winHeight + winHeight/4) && (diagramSkills["developCount"] == 0)){
 			delay(".skill-2",{"transform":"translateX(0)"},0);
 
 			changeDiagram("develop", diagramSkills, "developCount", "developEnd", 43, "red");
@@ -207,7 +207,7 @@ $(document).ready(function(){
 			changeNumber(".skill-2 .percent", percentSkills, "developCount", "developEnd", 30, "%");
 		}
 
-		if((winScroll >= $(".skill-3").offset().top - winHeight + winHeight/4) && (diagramSkills["seoCount"] == 0)){			
+		if($(".skill-3").length > 0 && (winScroll >= $(".skill-3").offset().top - winHeight + winHeight/4) && (diagramSkills["seoCount"] == 0)){
 			delay(".skill-3",{"transform":"translateX(0)"},0);
 
 			changeDiagram("seo", diagramSkills, "seoCount", "seoEnd", 50, "orange");
@@ -215,12 +215,14 @@ $(document).ready(function(){
 			changeNumber(".skill-3 .percent", percentSkills, "seoCount", "seoEnd", 40, "%");
 		}
 
-		if((winScroll >= $(".counting").offset().top - winHeight + winHeight/2) && (counting["projectsCount"] == 0)){
+		if($(".counting").length > 0 && (winScroll >= $(".counting").offset().top - winHeight + winHeight/2) && (counting["projectsCount"] == 0)){
 			changeNumber(".projects-count", counting, "projectsCount", "projectsMax", 30);
 			changeNumber(".clients-count", counting, "clientsCount", "clientsMax", 30);
 			changeNumber(".certificates-count", counting, "certificatesCount", "certificatesMax", 30);
-			$("footer").css({"display" : "flex"}); // fix show footer when load page
 		}
+        if($(".order").length > 0 && (winScroll >= $(".order").offset().top - winHeight + winHeight/2)){
+            $("footer").css({"display" : "flex"}); // fix show footer when load page
+        }
 
         changeSection(["#contacts","#order","#review","#portfolio","#service","#about"],winScroll);
 	});
