@@ -735,6 +735,18 @@ footer .contacts span {
   background-color: #000;
   color: #ffffff;
 }
+.img-design {
+  background-image: url('../img/design.jpg');
+  background-size: 100%;
+}
+.img-develop {
+  background-image: url('../img/develop.jpg');
+  background-size: 100%;
+}
+.img-seo {
+  background-image: url('../img/seo.jpg');
+  background-size: 100%;
+}
 @media (max-width: 1150px) {
   article {
     font-size: 22px;
