@@ -252,12 +252,14 @@ $(document).ready(function(){
 	$("#order_sub").on("click",function(e){
         var name = $("#name").val();
         var email = $("#email").val();
-        var telephone = $("#telephone").val();
+		var telephone = $("#telephone").val();
+		var services = $("#services").val();
         var description = $("#description").val();
         var obj = {
             "name": name,
             "email": email,
-            "telephone": telephone,
+			"telephone": telephone,
+			"services": services,
             "description": description
         };
 
@@ -265,7 +267,7 @@ $(document).ready(function(){
             e.preventDefault();
             $.ajax({
                 type: "POST",
-                url: "../include/ajax.php",
+                url: "../include/ajax/order.php",
                 data: obj,
                 dataType: "json",
                 success: function () {

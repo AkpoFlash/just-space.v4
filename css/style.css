@@ -500,6 +500,8 @@ footer .contacts span {
   margin-bottom: 20px;
   border: 2px solid #000;
   transition: background 1.3s ease-in-out;
+  box-sizing: border-box;
+  text-indent: 5px;
 }
 .order input:focus {
   outline: 2px solid #0097ba;
@@ -511,9 +513,27 @@ footer .contacts span {
   margin-bottom: 20px;
   height: 100px;
   border: 2px solid #000;
+  box-sizing: border-box;
+  text-indent: 5px;
 }
 .order textarea:focus {
   outline: 2px solid #0097ba;
+}
+.order select {
+  background-color: #ffffff;
+  width: 60%;
+  max-width: 600px;
+  height: 36px;
+  margin-bottom: 20px;
+  border: 2px solid #000;
+  transition: background 1.3s ease-in-out;
+}
+.order select:focus {
+  outline: 2px solid #0097ba;
+  background-color: rgba(34, 34, 34, 0.05);
+}
+.order select option {
+  height: 36px;
 }
 .order input[type="submit"] {
   width: 30%;

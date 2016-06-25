@@ -87,7 +87,7 @@ require_once($_SERVER['DOCUMENT_ROOT']."/include/const.php");
     </article>
     <article class="order">
         <form action="index.php" method="POST">
-            <input name="name" type="text" id="name" <?php echo "value=\"".$_POST['name']."\""; ?> placeholder="ФИО" required><br><input name="email" type="email" id="email" <?php echo "value=\"".$_POST['email']."\""; ?> placeholder="Email" required><br><input name="telephone" type="tel" id="telephone" <?php echo "value=\"".$_POST['telephone']."\""; ?> placeholder="Телефон" required><br><textarea name="description" id="description" placeholder="Краткое описание задачи"><?php echo $_POST['description']; ?></textarea><br><input id="order_sub" type="submit" name="order_sub" value="Отправить заявку">
+            <input name="name" type="text" id="name" <?php echo "value=\"".$_POST['name']."\""; ?> placeholder="ФИО" required><br><input name="email" type="email" id="email" <?php echo "value=\"".$_POST['email']."\""; ?> placeholder="Email" required><br><input name="telephone" type="tel" id="telephone" <?php echo "value=\"".$_POST['telephone']."\""; ?> placeholder="Телефон" required><br><select name="services" id="services"><option value="Создание дизайна">Создание дизайна</option><option value="Разработка сайта">Разработка сайта</option><option value="Продвижение и реклама" selected>Продвижение и реклама</option></select><br><textarea name="description" id="description" placeholder="Краткое описание задачи"><?php echo $_POST['description']; ?></textarea><br><input id="order_sub" type="submit" name="order_sub" value="Отправить заявку">
         </form>
     </article>
     <article id="contacts" class="map">
