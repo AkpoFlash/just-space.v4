@@ -539,6 +539,8 @@ footer{
 			outline: 2px solid @secondColor;
 			background-color: rgba(34,34,34,0.05);
 		}
+        box-sizing: border-box;
+        text-indent: 5px;
 	}
 	textarea{
 		width: 60%;
@@ -549,6 +551,24 @@ footer{
 		&:focus{
 			outline: 2px solid @secondColor;
 		}
+        box-sizing: border-box;
+        text-indent: 5px;
+    }
+	select{
+      background-color: @white;
+      width: 60%;
+      max-width: 600px;
+      height: 36px;
+      margin-bottom: 20px;
+      border: 2px solid @black;
+      transition: background 1.3s ease-in-out;
+      &:focus{
+        outline: 2px solid @secondColor;
+        background-color: rgba(34,34,34,0.05);
+      }
+      option{
+        height: 36px;
+      }
 	}
 	input[type="submit"]{
 		width: 30%;
