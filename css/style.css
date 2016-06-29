@@ -222,10 +222,6 @@ footer .social {
   width: 25%;
   text-align: left;
 }
-footer .link {
-  width: 25%;
-  text-align: center;
-}
 footer .contacts {
   width: 25%;
   text-align: right;
@@ -256,38 +252,19 @@ footer .contacts span {
 .services .service .promo {
   width: 100%;
   height: 400px;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 .services .service .promo .promo-title {
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  opacity: 1;
-  transition: opacity 0.3s ease-in-out;
+  padding: 20px 0;
+  display: block;
   font-size: 36px;
 }
 .services .service .promo .promo-text {
   width: 100%;
   height: 100%;
-  transform: translateX(-100%);
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  opacity: 0;
+  display: block;
   padding: 20px;
   box-sizing: border-box;
-  transition: all 0.3s ease-in-out;
 }
 .services .service .promo .promo-text a {
   margin: 0 auto;
@@ -307,16 +284,8 @@ footer .contacts span {
 }
 .services .service .promo .promo-text a:hover {
   color: #000;
-  border-color: #000;
+  border-color: #ffffff;
   background-color: #ffffff;
-}
-.services .service:hover .promo-title {
-  opacity: 0;
-}
-.services .service:hover .promo-text {
-  transform: translateX(0);
-  background-color: rgba(34, 34, 34, 0.8);
-  opacity: 1;
 }
 .services .design {
   background-image: url("../img/design.jpg");
@@ -357,6 +326,7 @@ footer .contacts span {
   border-radius: 5px 0 5px 0;
   transition: all 1s ease-in-out;
   transform: translateX(-500%);
+  box-sizing: border-box;
 }
 .reviews .review .signature {
   font-size: 18px;
@@ -537,6 +507,7 @@ footer .contacts span {
 }
 .order input[type="submit"] {
   width: 30%;
+  min-width: 200px;
   max-width: 300px;
   height: 50px;
   font-size: 18px;
@@ -927,9 +898,6 @@ footer .contacts span {
   footer .social {
     width: 30%;
   }
-  footer .link {
-    width: 15%;
-  }
   footer .contacts {
     width: 30%;
   }
@@ -937,6 +905,10 @@ footer .contacts span {
 @media (max-width: 800px) {
   article {
     font-size: 20px;
+    margin: 0;
+  }
+  article p {
+    padding: 0 50px;
   }
   header nav li {
     display: block;
@@ -968,6 +940,131 @@ footer .contacts span {
   header .text a {
     font-size: 28px;
   }
+  .abouts {
+    padding: 0;
+    display: block;
+  }
+  .abouts .about {
+    width: 100%;
+    padding: 0;
+    height: 300px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .abouts .about:not(:nth-child(1)) {
+    margin-top: 50px;
+  }
+  .abouts .about img {
+    display: none;
+  }
+  .abouts .about .promo {
+    height: 100%;
+    width: 100%;
+    color: #ffffff;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px 50px;
+    box-sizing: border-box;
+  }
+  .abouts .about .promo .promo-title {
+    color: #ffffff;
+    font-size: 28px;
+  }
+  .abouts .about .promo .promo-text {
+    color: #ffffff;
+    font-size: 24px;
+  }
+  .abouts .about-1 {
+    background-image: url('../img/quality.jpg');
+  }
+  .abouts .about-2 {
+    background-image: url('../img/beauty.jpg');
+  }
+  .abouts .about-3 {
+    background-image: url('../img/support.jpg');
+  }
+  .develops {
+    display: none;
+  }
+  .services {
+    display: block;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+  }
+  .services .service {
+    width: 100%;
+    position: relative;
+    background: #ffffff;
+    color: #ffffff;
+    overflow: hidden;
+    background-size: cover;
+    margin: 0 0 50px;
+  }
+  .services .service .promo {
+    width: 100%;
+    height: 400px;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  .services .service .promo .promo-title {
+    display: block;
+    font-size: 36px;
+  }
+  .services .service .promo .promo-text {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: block;
+    padding: 20px;
+    box-sizing: border-box;
+    font-size: 28px;
+  }
+  .services .service .promo .promo-text a {
+    margin: 0 auto;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color: #ffffff;
+    margin-top: 30px;
+    font-size: 28px;
+    border: 1px solid #ffffff;
+    padding: 10px 15px;
+    transition: all 0.3s ease-in-out;
+  }
+  .services .service .promo .promo-text a:hover {
+    color: #000;
+    border-color: #ffffff;
+    background-color: #ffffff;
+  }
+  .services .design {
+    background-image: url("../img/design.jpg");
+    background-position: right;
+  }
+  .services .develop {
+    background-image: url("../img/develop.jpg");
+    background-position: center;
+  }
+  .services .seo {
+    background-image: url("../img/seo.jpg");
+    background-position: center;
+  }
+  .order {
+    width: 100%;
+  }
+  .order input {
+    width: 100%;
+  }
+  .order textarea {
+    width: 100%;
+  }
+  .order select {
+    width: 100%;
+  }
   footer h3 {
     font-size: 24px;
   }
@@ -977,10 +1074,111 @@ footer .contacts span {
   footer .social {
     width: 40%;
   }
-  footer .link {
-    width: 0%;
-  }
   footer .contacts {
     width: 40%;
+  }
+}
+@media (max-width: 500px) {
+  article {
+    font-size: 20px;
+    margin: 0;
+  }
+  article p {
+    padding: 0 50px;
+  }
+  header {
+    max-height: 70px;
+    background-image: none;
+  }
+  header nav li a {
+    font-size: 18px;
+    padding: 0;
+  }
+  header .logo {
+    font-size: 22px;
+  }
+  header .text {
+    display: none;
+  }
+  header .left-arrow {
+    display: none;
+  }
+  header .right-arrow {
+    display: none;
+  }
+  .abouts .about {
+    height: 400px;
+  }
+  .abouts .about:not(:nth-child(1)) {
+    margin-top: 50px;
+  }
+  .abouts .about .promo .promo-title {
+    font-size: 28px;
+  }
+  .abouts .about .promo .promo-text {
+    font-size: 20px;
+  }
+  .develops {
+    display: none;
+  }
+  .services .service .promo {
+    height: 440px;
+  }
+  .services .service .promo .promo-title {
+    font-size: 36px;
+  }
+  .services .service .promo .promo-text {
+    font-size: 24px;
+  }
+  .services .service .promo .promo-text a {
+    font-size: 24px;
+  }
+  .portfolio .slider {
+    height: 300px;
+    width: 100%;
+  }
+  .portfolio .slide img {
+    top: 16px;
+  }
+  .reviews {
+    height: 510px;
+  }
+  .reviews .review {
+    font-size: 22px;
+    left: 2%;
+    right: 2%;
+    width: 96%;
+    margin: 0;
+  }
+  .reviews .review .signature {
+    font-size: 20px;
+    right: 10px;
+  }
+  .video {
+    padding: 10px;
+  }
+  .video .promo {
+    display: none;
+  }
+  footer h3 {
+    font-size: 22px;
+  }
+  footer .fa {
+    font-size: 16px;
+  }
+  footer .social {
+    width: 35%;
+  }
+  footer .contacts {
+    width: 65%;
+  }
+  .counting {
+    display: none;
+  }
+  .clients {
+    display: none;
+  }
+  .map {
+    display: none;
   }
 }
