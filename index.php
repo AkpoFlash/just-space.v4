@@ -58,15 +58,15 @@
 	</div>
 	<header>
 		<div class="logo">
-            <img src="/img/logo.png" height="30px" alt="Logo Just Space"> <span>Just Space</span>
+            <img src="/img/logo.png" height="30px" alt="Logo Just Space">
 		</div>
 		<nav class="menu">
-			<li><a href="#about">О нас</a></li>
-			<li><a href="#service">Услуги</a></li>
-			<li><a href="#portfolio">Наши работы</a></li>
-			<li><a href="#review">Отзывы клиентов</a></li>
-			<li><a href="#contacts">Контакты</a></li>
-			<li><a href="#order">Оформить заказ</a></li>
+			<li><a href="#about">О нас</a>
+			<li><a href="#service">Услуги</a>
+			<li><a href="#portfolio">Наши работы</a>
+			<li><a href="#review">Отзывы клиентов</a>
+			<li><a href="#contacts">Контакты</a>
+			<li><a href="#order">Оформить заказ</a>
 		</nav>
 		<div class="burger">
             <span></span>
@@ -99,9 +99,9 @@
 	</header>
 	<main>
 		<article id="about">
-			<h2>Веб студия Just Space</h2>
+			<h2>Just Space</h2>
 			<p>
-                Мы специализируемся на создание качественного продукта созданного нами от начала и до конца: создаем дизайн ориентируясь на желания заказчика, разрабатываем сайт используя современные технологии, продвигаем в поисковых системах используя передовые методики SEO оптимизации.
+                Мы специализируемся на создание качественного продукта: создаем дизайн удоволетворяя все желания заказчика, разрабатываем быстрые и отзывчивые сайты, продвигаем в поисковых системах используя передовые методики SEO оптимизации, создаем уникальные мобильные приложения.
 			</p>
 		</article>
 		<article class="abouts">
@@ -183,7 +183,7 @@
 			<div class="service design">
 				<div class="promo">
 					<div class="promo-title">
-						Дизайн сайта
+						Дизайн
 					</div>
 					<div class="promo-text">
 						Вам необходимо создать уникальный дизайн сайта или воспользоваться шаблонным, но подстроенным точно под вас решением? Тогда вы пришли по адресу.
@@ -196,7 +196,7 @@
 			<div class="service develop">
 				<div class="promo">
 					<div class="promo-title">
-						Создание сайта
+						Разработка
 					</div>
 					<div class="promo-text">
 						Занимаемся созданием сайтов любой сложности: корпоративные сайты, сайты-визитки, интернет-магазины, лендинги и другие виды сайтов.
@@ -209,7 +209,7 @@
 			<div class="service seo">
 				<div class="promo">
 					<div class="promo-title">
-						Продвижение сайта
+						Продвижение
 					</div>
 					<div class="promo-text">
 						Поможем поднять сайт на первые позиции поисковой выдачи. Контекстная реклама, SEO продвижение, продвижение в социальных сетях и многое другое.
@@ -221,7 +221,7 @@
 			</div>
 		</article>
 		<article class="video">
-			<iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/CdsHZh4XZMo" frameborder="0" allowfullscreen></iframe>
+			<iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/_KfZrq3Yr2Q" frameborder="0" allowfullscreen></iframe>
 			<div class="promo">
 				<div class="promo-title">Уровень нашей специализации</div>
 				<article class="skills">
@@ -238,7 +238,7 @@
 					<div class="skill skill-3">
 						<span class="percent">0</span>
 						<span class="skill-text">Продвижение</span>
-						<canvas id="seo"></canvas>				
+						<canvas id="seo"></canvas>
 					</div>
 				</article>
 			</div>
@@ -314,7 +314,7 @@
 			</div>
 			<div class="left-arrow">&lt;</div>
 			<div class="right-arrow">&gt;</div>
-		</article>	
+		</article>
 		<article class="clients">
 			<img src="img/1.png" alt="">
 			<img src="img/2.png" alt="">
@@ -330,7 +330,24 @@
 		</article>
 		<article class="order">
 			<form action="index.php" method="POST">
-				<input name="name" type="text" id="name" <?php echo "value=\"".$_POST['name']."\""; ?> placeholder="ФИО" required><br><input name="email" type="email" id="email" <?php echo "value=\"".$_POST['email']."\""; ?> placeholder="Email" required><br><input name="telephone" type="tel" id="telephone" <?php echo "value=\"".$_POST['telephone']."\""; ?> placeholder="Телефон" required><br><select name="services" id="services"><option value="Создание дизайна">Создание дизайна</option><option value="Разработка сайта" selected>Разработка сайта</option><option value="Продвижение и реклама">Продвижение и реклама</option></select><br><textarea name="description" id="description" placeholder="Краткое описание задачи"><?php echo $_POST['description']; ?></textarea><br><input id="order_sub" type="submit" name="order_sub" value="Отправить заявку">
+				<input name="name" type="text" id="name" <?php echo "value=\"".$_POST['name']."\""; ?> placeholder="ФИО" required><!--
+				--><br><!--
+                --><input name="email" type="email" id="email" <?php echo "value=\"".$_POST['email']."\""; ?> placeholder="Email" required><!--
+                --><br><!--
+                --><input name="telephone" type="tel" id="telephone" <?php echo "value=\"".$_POST['telephone']."\""; ?> placeholder="Телефон" required><!--
+                --><br><!--
+                --><select name="services" id="services">
+                    <option value="Создание дизайна">Создание дизайна</option>
+                    <option value="Разработка сайта" selected>Разработка сайта</option>
+                    <option value="Создание дизайна">Создание дизайна</option>
+                    <option value="Разработка мобильного приложения">Разработка мобильного приложения</option>
+                    <option value="Что-то другое">Что-то другое</option>
+                </select><!--
+                --><br><!--
+                --><textarea name="description" id="description" placeholder="Краткое описание задачи"><?php echo $_POST['description']; ?></textarea>
+                <!--
+                --><br><!--
+                --><input id="order_sub" type="submit" name="order_sub" value="Отправить заявку">
 			</form>
 		</article>
         <article id="contacts" class="map">

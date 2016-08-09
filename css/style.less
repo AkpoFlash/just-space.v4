@@ -21,10 +21,16 @@
   src: url('Letter.otf');
 }
 
+@font-face{
+  font-family: Roboto;
+  src: url('roboto.ttf');
+}
+
 body{
 	position: relative;
 	margin: 0;
 	background: @white;
+    font-family: Roboto;
 }
 
 header{
@@ -45,7 +51,8 @@ header{
 		height: 70px;
 		text-align: right;
 		background: @white;
-		li{
+        box-shadow: 0 0 3px @black-light;
+      li{
 			height: 100%;
 			list-style: none;
 			display: inline-block;
@@ -241,11 +248,11 @@ footer{
 		color: @secondColor;
 	}
 	.social{
-		width: 25%;	
+		width: 25%;
 		text-align: left;
 	}
 	.contacts{
-		width: 25%;	
+		width: 25%;
 		text-align: right;
 		a,span{
 			color: @secondColor;
@@ -566,7 +573,7 @@ footer{
 		border-radius: 2px;
 	}
 	.promo{
-		margin-left: 20px;		
+		margin-left: 20px;
 		width: 50%;
 		text-align: right;
 		color: @white;
