@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" autoUpload="Always" serverName="just-space.v4" overwriteAll="false">
+  <component name="PublishConfigData" autoUpload="Always" serverName="just-space" overwriteAll="false">
     <serverData>
-      <paths name="just-space.v4">
+      <paths name="just-space">
         <serverdata>
           <mappings>
             <mapping deploy="/" local="$PROJECT_DIR$" web="/" />
