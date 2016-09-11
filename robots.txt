@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /logs/
+Disallow: /admin/
+Host: www.just-space.ru
+Sitemap: http://www.just-space.ru/sitemap.xml
