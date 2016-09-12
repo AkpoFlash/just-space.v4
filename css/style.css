@@ -4,7 +4,7 @@
 }
 @font-face {
   font-family: Roboto;
-  src: url('roboto.ttf');
+  src: url('roboto.woff2');
 }
 body {
   position: relative;
@@ -257,7 +257,7 @@ footer .contacts span {
 }
 .services .service .promo {
   width: 100%;
-  height: 400px;
+  height: 450px;
   background-color: rgba(0, 0, 0, 0.5);
 }
 .services .service .promo .promo-title {
@@ -780,9 +780,6 @@ footer .contacts span {
   .develops tr:nth-child(2) {
     font-size: 22px;
   }
-  .services .service .promo {
-    height: 350px;
-  }
   .services .service .promo .promo-title {
     font-size: 28px;
   }
@@ -856,8 +853,8 @@ footer .contacts span {
   .develops tr:nth-child(2) {
     font-size: 22px;
   }
-  .services .service .promo {
-    height: 370px;
+  .services .service {
+    width: 30%;
   }
   .services .service .promo .promo-title {
     font-size: 28px;
@@ -1139,12 +1136,22 @@ footer .contacts span {
   .services .service .promo .promo-text a {
     font-size: 24px;
   }
+  .portfolio {
+    width: 100%;
+    position: relative;
+  }
   .portfolio .slider {
+    background-image: none;
     height: 300px;
     width: 100%;
   }
+  .portfolio .slide {
+    height: 100%;
+    width: 100%;
+  }
   .portfolio .slide img {
-    top: 16px;
+    height: 100%;
+    width: 100%;
   }
   .reviews {
     height: 510px;

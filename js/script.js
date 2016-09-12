@@ -62,7 +62,7 @@ function changeNumber(className, obj, count, max, interval, postfix){
 			return;
 		}
 		$(className).text(++obj[count]+postfix);
-	},interval);	
+	},interval);
 }
 
 function changeDiagram(className, obj, count, max, interval, color){
@@ -72,7 +72,7 @@ function changeDiagram(className, obj, count, max, interval, color){
 		}
 		obj[count] += 0.05;
 		drawDiagram(className,obj[count],color);
-	},interval);	
+	},interval);
 }
 
 function drawCircle(id,x,y,r,start,end,flag,color){
@@ -190,12 +190,12 @@ $(document).ready(function(){
 		else{
 			$("#up").css({"transform": "translateX(150px)"});
 		}
-		
+
 		if($(".skill-1").length > 0 && (winScroll >= $(".skill-1").offset().top - winHeight + winHeight/4) && (diagramSkills["designCount"] == 0)){
 			delay(".skill-1",{"transform":"translateX(0)"},0);
 
 			changeDiagram("design", diagramSkills, "designCount", "designEnd", 47, "green");
-			
+
 			changeNumber(".skill-1 .percent", percentSkills, "designCount", "designEnd", 30, "%");
 		}
 
@@ -203,7 +203,7 @@ $(document).ready(function(){
 			delay(".skill-2",{"transform":"translateX(0)"},0);
 
 			changeDiagram("develop", diagramSkills, "developCount", "developEnd", 43, "red");
-			
+
 			changeNumber(".skill-2 .percent", percentSkills, "developCount", "developEnd", 30, "%");
 		}
 
@@ -211,7 +211,7 @@ $(document).ready(function(){
 			delay(".skill-3",{"transform":"translateX(0)"},0);
 
 			changeDiagram("seo", diagramSkills, "seoCount", "seoEnd", 50, "orange");
-			
+
 			changeNumber(".skill-3 .percent", percentSkills, "seoCount", "seoEnd", 40, "%");
 		}
 
@@ -236,18 +236,18 @@ $(document).ready(function(){
             Math.abs($(anchor.attr('href')).offset().top - 90 - winScroll),
             "swing"
         );
-		e.preventDefault(); 
+		e.preventDefault();
 	});
-    $(".menu a[href='#contacts']").on("click", function(e){
-        var anchor = $(this);
-        $('html, body').stop().animate({
-                scrollTop: $(anchor.attr('href')).offset().top
-            },
-            Math.abs($(anchor.attr('href')).offset().top - 90 - winScroll),
-            "swing"
-        );
-        e.preventDefault();
-    });
+  $(".menu a[href='#contacts']").on("click", function(e){
+    var anchor = $(this);
+    $('html, body').stop().animate({
+            scrollTop: $(anchor.attr('href')).offset().top
+        },
+        Math.abs($(anchor.attr('href')).offset().top - 90 - winScroll),
+        "swing"
+    );
+    e.preventDefault();
+  });
 
 	$("#order_sub").on("click",function(e){
         var name = $("#name").val();

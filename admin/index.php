@@ -7,7 +7,7 @@
     if(isset($_POST["authorization_sub"])){
         write_to_log("/logs/access.txt", "Введен логин: ".$_POST["login"]."\n");
         if($dbRes->Authorization($_POST["login"], $_POST["password"])){
-            redirect_to("http://just-space.v4/admin/admin_panel/index.php");
+            redirect_to("/admin/admin_panel/index.php");
         }
     }
 ?>
