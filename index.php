@@ -43,22 +43,22 @@
 		<img src="img/preloader.gif" class="spinner" alt="Идет загрузка сайта">
 	</div>
 	<div class="popup">
-        <div class="done">
-            <div class="window">
-                <p>Ваша заявка успешно отправлена, в ближайшее время с вами свяжется наш менеджер</p>
-                <input class="close_window" type="button" value="Ок">
-            </div>
-        </div>
-        <div class="error">
-            <div class="window">
-                <p>Произошла ошибка, попробуйте отправить снова</p>
-                <input class="close_window" type="button" value="Ок">
-            </div>
-        </div>
+    <div class="done">
+      <div class="window">
+        <p>Ваша заявка успешно отправлена, в ближайшее время с вами свяжется наш менеджер</p>
+        <input class="close_window" type="button" value="Ок">
+      </div>
+    </div>
+    <div class="error">
+      <div class="window">
+        <p>Произошла ошибка, попробуйте отправить снова</p>
+        <input class="close_window" type="button" value="Ок">
+      </div>
+    </div>
 	</div>
 	<header>
 		<div class="logo">
-            <img src="/img/logo.png" height="30px" alt="Logo Just Space">
+      <img src="/img/logo.png" height="30px" alt="Logo Just Space">
 		</div>
 		<nav class="menu">
 			<li><a href="#about">О нас</a>
@@ -69,9 +69,9 @@
 			<li><a href="#order">Оформить заказ</a>
 		</nav>
 		<div class="burger">
-            <span></span>
-            <span></span>
-            <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
 		</div>
 		<div class="text text-1">
  			Разрабатываем уникальный дизайн
@@ -101,7 +101,7 @@
 		<article id="about">
 			<h2>Just Space</h2>
 			<p>
-                Мы специализируемся на создание качественного продукта: создаем дизайн удоволетворяя все желания заказчика, разрабатываем быстрые и отзывчивые сайты, продвигаем в поисковых системах используя передовые методики SEO оптимизации, создаем уникальные мобильные приложения.
+        Мы специализируемся на создание качественного продукта: создаем дизайн удоволетворяя все желания заказчика, разрабатываем быстрые и отзывчивые сайты, продвигаем в поисковых системах используя передовые методики SEO оптимизации, создаем уникальные мобильные приложения.
 			</p>
 		</article>
 		<article class="abouts">
@@ -112,9 +112,9 @@
 						Качество работы
 					</div>
 					<div class="promo-text">
-                        Главное отличие нашей компании от других, это желание обеспечить высокий уровень качества на всех этапах разработки.
-                        <br>
-                        Мы стремимся создавать идеальные сайты.
+            Главное отличие нашей компании от других, это желание обеспечить высокий уровень качества на всех этапах разработки.
+            <br>
+            Мы стремимся создавать идеальные сайты.
 					</div>
 				</div>
 			</div>
@@ -125,9 +125,9 @@
 						Привлекательный продукт
 					</div>
 					<div class="promo-text">
-                        В первую очередь сайт должен привлекать клиентов и показывать ваши лучшие стороны, поэтому независимо от рода деятельности ваш сайт обязан быть привлекательным.
-                        <br>
-                        Мы создаем действительно красивые сайты.
+            В первую очередь сайт должен привлекать клиентов и показывать ваши лучшие стороны, поэтому независимо от рода деятельности ваш сайт обязан быть привлекательным.
+            <br>
+            Мы создаем действительно красивые сайты.
 					</div>
 				</div>
 			</div>
@@ -138,10 +138,10 @@
 						Техническая поддержка
 					</div>
 					<div class="promo-text">
-                        Любой продукт рано или поздно нуждается в улучшение и развитие, поэтому немаловажным фактором является дальнейшее сопровождение или модернизация уже готового сайта.
-                        <br>
-                        Мы постоянно улучшаем сайты.
-                    </div>
+            Любой продукт рано или поздно нуждается в улучшение и развитие, поэтому немаловажным фактором является дальнейшее сопровождение или модернизация уже готового сайта.
+            <br>
+            Мы постоянно улучшаем сайты.
+          </div>
 				</div>
 			</div>
 		</article>
@@ -160,16 +160,16 @@
 			</tr>
 			<tr>
 				<td>
-                    Обеспечиваем удобное отображение сайтов на всех устройствах: компьютерах, планшетах и телефонах.
+          Обеспечиваем удобное отображение сайтов на всех устройствах: компьютерах, планшетах и телефонах.
 				</td>
 				<td>
-                    Мы можем снабдить сайты поддержкой даже устаревших браузеров - Internet Explorer версии 8 и ниже.
+          Мы можем снабдить сайты поддержкой даже устаревших браузеров - Internet Explorer версии 8 и ниже.
 				</td>
 				<td>
-                    Стараясь использовать только лучшие решения, мы внедряем новые технологии в наши проекты.
+          Стараясь использовать только лучшие решения, мы внедряем новые технологии в наши проекты.
 				</td>
 				<td>
-                    Наша команда стремиться документировать код и соблюдать принятые стандарты, что позволяет работать лучше.
+          Наша команда стремиться документировать код и соблюдать принятые стандарты, что позволяет работать лучше.
 				</td>
 			</tr>
 		</table>
@@ -246,23 +246,23 @@
 		<article id="portfolio">
 			<h2>Портфолио</h2>
 			<p>
-                Вы можете ознакомиться с нашими работами, представленной ниже проекты выполнены полностью нами, с момента создания шаблона, до момента появления сайта на первых позициях поисковой выдачи.
+        Вы можете ознакомиться с нашими работами, представленной ниже проекты выполнены полностью нами, с момента создания шаблона, до момента появления сайта на первых позициях поисковой выдачи.
 			</p>
 		</article>
 		<article class="portfolio">
-				<div id="slider-wrap">
-					<div class="slider" id="slider">
-						<div class="slide"><a href="http://bmw-auto.esy.es/" target="_blank"><img src="img/slider/bmw-auto.jpg" alt="bmw-auto.ru"></a></div>
-						<div class="slide"><img src="img/slider/tul-flat.jpg" alt="tul-flat.ru"></div>
-						<div class="slide"><img src="img/slider/taxi-house.jpg" alt="taxi-house.ru"></div>
-						<div class="slide"><a href="http://mwcorp.ru/" target="_blank"><img src="img/slider/mwcorp.jpg" alt="mwcorp.ru"></a></div>
-		                <div class="slide"><a href="http://cooking.mwcorp.ru/" target="_blank"><img src="img/slider/cooking.jpg" alt="mwcorp-cooking.ry"></a></div>
-						<div class="slide"><a href="http://xn----8sbk2abp4ai9h.xn--p1ai/" target="_blank"><img src="img/slider/doly-tula.jpg" alt="doly-tula.ru"></a></div>
-		                <div class="slide"><a href="http://www.gazel-traffic.ru/" target="_blank"><img src="img/slider/gazel-traffic.jpg" alt="gazel-traffic.ru"></a></div>
-					</div>
-                    <div class="left-arrow">&lt;</div>
-                    <div class="right-arrow">&gt;</div>
+			<div id="slider-wrap">
+				<div class="slider" id="slider">
+					<div class="slide"><img src="img/slider/bmw-auto.jpg" alt="bmw-auto.ru"></div>
+					<div class="slide"><img src="img/slider/tul-flat.jpg" alt="tul-flat.ru"></div>
+					<div class="slide"><img src="img/slider/taxi-house.jpg" alt="taxi-house.ru"></div>
+					<div class="slide"><img src="img/slider/mwcorp.jpg" alt="mwcorp.ru"></div>
+	        <div class="slide"><img src="img/slider/cooking.jpg" alt="mwcorp-cooking.ry"></div>
+					<div class="slide"><img src="img/slider/doly-tula.jpg" alt="doly-tula.ru"></div>
+	        <div class="slide"><img src="img/slider/gazel-traffic.jpg" alt="gazel-traffic.ru"></div>
 				</div>
+        <div class="left-arrow">&lt;</div>
+        <div class="right-arrow">&gt;</div>
+			</div>
 		</article>
 		<table class="counting">
 			<tr>
@@ -287,18 +287,18 @@
 		<article class="reviews">
 			<div class="review review-1">
 				<p>
-                    Впервые я обратился к веб-студии Just Space в 2010 году с задачей разработать с нуля сайт-визитку рекламирующую услуги по грузоперевозкам на газели, а также продвинуть данный сайт на первые позиции поисковой выдачи.
-                </p>
+          Впервые я обратился к веб-студии Just Space в 2010 году с задачей разработать с нуля сайт-визитку рекламирующую услуги по грузоперевозкам на газели, а также продвинуть данный сайт на первые позиции поисковой выдачи.
+        </p>
 				<p>
-                    В итоге я оказался полностью удовлетворен результатами работы, все поставленные задачи выполнены, а по ключевым словам сайт занимает лидирующие позиции, также была оказана дополнительная услуга по размещению контекстной рекламы. При расширение планирую вновь заказать работу в веб-студии Just Space.
-                </p>
+          В итоге я оказался полностью удовлетворен результатами работы, все поставленные задачи выполнены, а по ключевым словам сайт занимает лидирующие позиции, также была оказана дополнительная услуга по размещению контекстной рекламы. При расширение планирую вновь заказать работу в веб-студии Just Space.
+        </p>
 				<span class="signature">
 					Андрей компания &laquo;Gazell-Traffic&raquo;
 				</span>
 			</div>
 			<div class="review review-2">
 				<p>
-                    Наша фирма работает на рынке с 1997 года и долгое время мы имели только основной корпоративный сайт, но в какой то момент было принято решение создать тематические лендинги для повышения продаж. Просмотрев действующие предложения выбрали студию Just Space, в первую очередь из-за привлекательной цены, быстрых сроков и рекомендаций знакомых. Первый макет был готов уже на следующий день, еще сутки работал копирайтер, в итоге через три дня сайт был полностью готов. После этого также договорились о создание контекстной рекламы и поисковом продвижение. В данный момент компания Just Space предоставляет нам техническую поддержку полностью удовлетворяющую наши нужды.
+          Наша фирма работает на рынке с 1997 года и долгое время мы имели только основной корпоративный сайт, но в какой то момент было принято решение создать тематические лендинги для повышения продаж. Просмотрев действующие предложения выбрали студию Just Space, в первую очередь из-за привлекательной цены, быстрых сроков и рекомендаций знакомых. Первый макет был готов уже на следующий день, еще сутки работал копирайтер, в итоге через три дня сайт был полностью готов. После этого также договорились о создание контекстной рекламы и поисковом продвижение. В данный момент компания Just Space предоставляет нам техническую поддержку полностью удовлетворяющую наши нужды.
 				</p>
 				<span class="signature">
 					Андрей компания &laquo;Тульский центр недвижимости&raquo;
@@ -306,7 +306,7 @@
 			</div>
 			<div class="review review-3">
 				<p>
-                    Наткнулся на этих ребят совершенно случайно, я тогда только начинал заниматься дизайном и решил сам сделал макет для своего сайта. Сделать то сделал, а создать сайт некому, начал поиски опрашивая знакомых и вот мне порекомендовали обратиться к ним. После пары встреч обсудили все детали и началась работа, в результате создали крутой сайт учтя все мои пожелания. Спасибо!
+          Наткнулся на этих ребят совершенно случайно, я тогда только начинал заниматься дизайном и решил сам сделал макет для своего сайта. Сделать то сделал, а создать сайт некому, начал поиски опрашивая знакомых и вот мне порекомендовали обратиться к ним. После пары встреч обсудили все детали и началась работа, в результате создали крутой сайт учтя все мои пожелания. Спасибо!
 				</p>
 				<span class="signature">
 					Максим компания &laquo;MaxWhere Corporation&raquo;
@@ -332,28 +332,28 @@
 			<form action="index.php" method="POST">
 				<input name="name" type="text" id="name" <?php echo "value=\"".$_POST['name']."\""; ?> placeholder="ФИО" required><!--
 				--><br><!--
-                --><input name="email" type="email" id="email" <?php echo "value=\"".$_POST['email']."\""; ?> placeholder="Email" required><!--
-                --><br><!--
-                --><input name="telephone" type="tel" id="telephone" <?php echo "value=\"".$_POST['telephone']."\""; ?> placeholder="Телефон" required><!--
-                --><br><!--
-                --><select name="services" id="services">
-                    <option value="Создание дизайна">Создание дизайна</option>
-                    <option value="Разработка сайта" selected>Разработка сайта</option>
-                    <option value="Создание дизайна">Создание дизайна</option>
-                    <option value="Разработка мобильного приложения">Разработка мобильного приложения</option>
-                    <option value="Что-то другое">Что-то другое</option>
-                </select><!--
-                --><br><!--
-                --><textarea name="description" id="description" placeholder="Краткое описание задачи"><?php echo $_POST['description']; ?></textarea>
-                <!--
-                --><br><!--
-                --><input id="order_sub" type="submit" name="order_sub" value="Отправить заявку">
+        --><input name="email" type="email" id="email" <?php echo "value=\"".$_POST['email']."\""; ?> placeholder="Email" required><!--
+        --><br><!--
+        --><input name="telephone" type="tel" id="telephone" <?php echo "value=\"".$_POST['telephone']."\""; ?> placeholder="Телефон" required><!--
+        --><br><!--
+        --><select name="services" id="services">
+            <option value="Создание дизайна">Создание дизайна</option>
+            <option value="Разработка сайта" selected>Разработка сайта</option>
+            <option value="Создание дизайна">Создание дизайна</option>
+            <option value="Разработка мобильного приложения">Разработка мобильного приложения</option>
+            <option value="Что-то другое">Что-то другое</option>
+        </select><!--
+        --><br><!--
+        --><textarea name="description" id="description" placeholder="Краткое описание задачи"><?php echo $_POST['description']; ?></textarea>
+        <!--
+        --><br><!--
+        --><input id="order_sub" type="submit" name="order_sub" value="Отправить заявку">
 			</form>
 		</article>
-        <article id="contacts" class="map">
-            <script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=GQ40Uswl44098sFjsrwVflyKkHGcnW94&width=100%&height=350&lang=ru_RU&sourceType=constructor"></script>
-        </article>
-    </main>
+      <article id="contacts" class="map">
+        <script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=GQ40Uswl44098sFjsrwVflyKkHGcnW94&width=100%&height=350&lang=ru_RU&sourceType=constructor"></script>
+      </article>
+  </main>
 	<footer>
 		<div class="social">
 			<h3>Найдите нас</h3>
